@@ -427,8 +427,7 @@ A J+16, tu dois faire exactement ce que tu as annonce.
 Pas de bluff. Pas de relance. Pas de faiblesse.
 Fais ce que tu as dit. Le reste suivra."`,
     keywords: ["lecons", "experts", "verdict", "final", "execution", "conseils"]
-  }
-];
+  },
 
   // ---------------------------------------------------------------------------
   // ANALYSE RICHARD STAVROS (INSIDER)

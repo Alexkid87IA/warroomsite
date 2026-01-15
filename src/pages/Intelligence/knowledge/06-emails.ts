@@ -375,7 +375,7 @@ QUESTIONS SOULEVÉES:
 
 FIABILITÉ: ✅ PROUVÉ (documents transmis)`,
     keywords: ["email", "31 octobre", "documents", "joel", "cooper", "transmission", "découverte"]
-  }
+  },
   // ─────────────────────────────────────────────────────────────────────────────
   // EMAIL MARTIN FEBVRE — 12 JANVIER 2026
   // ─────────────────────────────────────────────────────────────────────────────

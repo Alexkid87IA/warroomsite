@@ -3,6 +3,74 @@
 @tailwind utilities;
 
 @layer components {
+  /* War Room Design System */
+
+  /* Surface styles - replaces bg-slate-800/30 pattern */
+  .surface {
+    @apply bg-slate-800/30 rounded-lg;
+  }
+
+  .surface-elevated {
+    @apply bg-slate-800/50 rounded-lg border border-slate-700/50;
+  }
+
+  /* Data box - common pattern for content blocks */
+  .data-box {
+    @apply p-3 bg-slate-800/30 rounded-lg;
+  }
+
+  .data-box-lg {
+    @apply p-4 bg-slate-800/30 rounded-lg;
+  }
+
+  /* Alert headers */
+  .alert-header {
+    @apply bg-gradient-to-r rounded-xl p-5 border;
+  }
+
+  .alert-header-danger {
+    @apply alert-header from-red-900/30 via-red-800/20 to-transparent border-red-500/30;
+  }
+
+  .alert-header-warning {
+    @apply alert-header from-amber-900/30 via-amber-800/20 to-transparent border-amber-500/30;
+  }
+
+  .alert-header-info {
+    @apply alert-header from-blue-900/30 via-blue-800/20 to-transparent border-blue-500/30;
+  }
+
+  .alert-header-success {
+    @apply alert-header from-emerald-900/30 via-emerald-800/20 to-transparent border-emerald-500/30;
+  }
+
+  /* Icon containers */
+  .icon-box {
+    @apply w-12 h-12 rounded-lg flex items-center justify-center text-2xl;
+  }
+
+  .icon-box-sm {
+    @apply w-8 h-8 rounded-md flex items-center justify-center;
+  }
+
+  /* Typography helpers */
+  .label-uppercase {
+    @apply text-xs text-slate-500 uppercase tracking-wider font-medium;
+  }
+
+  /* Sidebar specific */
+  .sidebar-item {
+    @apply flex items-center gap-3 px-3 py-2.5 rounded-lg transition-all duration-200;
+  }
+
+  .sidebar-item-active {
+    @apply bg-slate-800 text-white border-l-2 border-blue-500;
+  }
+
+  .sidebar-section-header {
+    @apply flex items-center justify-between px-3 py-2 text-xs font-semibold text-slate-400 uppercase tracking-wider cursor-pointer hover:text-slate-300;
+  }
+
   .markdown-content {
     @apply text-sm;
   }

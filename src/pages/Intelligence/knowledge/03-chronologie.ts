@@ -307,7 +307,7 @@ STRATÉGIE ADN — PHASE SILENCE:
     id: "chrono-2026-janvier",
     category: "chronologie",
     title: "Janvier 2026 — Escalade finale",
-    content: \`CHRONOLOGIE JANVIER 2026
+    content: `CHRONOLOGIE JANVIER 2026
 
 12 JANVIER 2026 — EMAIL MARTIN FEBVRE (CC):
 • Nouveau contact CC: Martin Febvre (comptabilité)
@@ -348,7 +348,7 @@ STRATÉGIE ADN — PHASE SILENCE:
   1. Communication publique (obligation morale envers 1,2M personnes)
   2. Plainte pénale en France
   3. Procédures arbitrales et judiciaires
-• FIABILITÉ: ✅ PROUVÉ (lettre envoyée)\`,
+• FIABILITÉ: ✅ PROUVÉ (lettre envoyée)`,
     keywords: ["janvier", "2026", "martin", "febvre", "facture", "lettre", "offensive", "contre-créance", "délais"]
   },
 
