@@ -5,5 +5,8 @@ export { StatCard } from './StatCard';
 export { ChatMessage } from './ChatMessage';
 export { ChatInput } from './ChatInput';
 
-// Re-export all section components
-export * from './sections';
+// UI components
+export * from './ui';
+
+// Navigation components
+export * from './navigation';
