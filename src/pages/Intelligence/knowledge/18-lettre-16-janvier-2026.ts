@@ -305,6 +305,73 @@ ADN Production SAS`,
   },
 
   // ---------------------------------------------------------------------------
+  // ARTICLES DE LOI INVOQUES
+  // ---------------------------------------------------------------------------
+  {
+    id: "lettre-16-janvier-articles",
+    category: "lettres",
+    title: "Lettre 16/01 — Articles de loi invoques",
+    content: `ARTICLES DE LOI INVOQUES DANS LA LETTRE DU 16 JANVIER 2026
+
+DROIT SUISSE — CODE DES OBLIGATIONS (CO):
+
+Art. 97 CO — Responsabilite pour inexecution
+- "Lorsque le creancier ne peut obtenir l'execution de l'obligation ou ne peut l'obtenir qu'imparfaitement, le debiteur est tenu de reparer le dommage en resultant"
+- UTILISATION: CC n'a pas respecte ses obligations de securite
+
+Art. 100 CO — Nullite clause exoneratoire
+- "Est nulle toute clause qui libere d'avance le debiteur de la responsabilite qu'il encourrait en cas de dol ou de faute grave"
+- UTILISATION: La limitation de responsabilite (Clause 9.2) est inapplicable en cas de faute grave
+
+Art. 101 CO — Responsabilite du fait des auxiliaires
+- "Celui qui, meme d'une maniere licite, confie a des auxiliaires le soin d'executer une obligation est responsable du dommage qu'ils causent"
+- UTILISATION: CC est responsable des actes de Jonathan Mayorkas et Joel Cooper (Gmail perso, absence 2FA)
+
+Art. 398 CO — Exces de pouvoirs (mandat)
+- Le mandataire doit agir dans les limites des pouvoirs conferes
+- UTILISATION: CC a excede les pouvoirs accordes (acces paiements → controle total)
+
+DROIT SUISSE — CODE CIVIL (CC):
+
+Art. 2 CC — Abus de droit
+- "L'abus manifeste d'un droit n'est pas protege par la loi"
+- UTILISATION: L'activation des Clauses 6 et 7 constituerait un abus de droit vu les circonstances
+
+DROIT FRANCAIS — CODE PENAL (CP):
+
+Art. 323-1 CP — Acces frauduleux a un systeme automatise
+- "Le fait d'acceder ou de se maintenir, frauduleusement, dans tout ou partie d'un systeme de traitement automatise de donnees est puni de 3 ans d'emprisonnement et de 100 000 EUR d'amende"
+- UTILISATION: Identifier les auteurs du piratage et documenter les failles
+
+Art. 314-1 CP — Abus de confiance
+- "L'abus de confiance est le fait par une personne de detourner, au prejudice d'autrui, des fonds, des valeurs ou un bien quelconque qui lui ont ete remis et qu'elle a acceptes a charge de les rendre, de les representer ou d'en faire un usage determine"
+- UTILISATION: Detournement des actifs numeriques confies (transfert vers BM de CC sans consentement)
+
+CLAUSES CONTRACTUELLES INVOQUEES:
+
+Clause 4.3(e)(ii) — Exception penalites
+- Les penalites ne s'appliquent pas si manquement "through no fault of Licensor" et "could not have been avoided by Licensor taking reasonable precautions"
+- UTILISATION: Le piratage est survenu sous controle exclusif de CC
+
+Clause 6 — Liquidated Damages
+- Penalites x3 si >6 mois de retard (jusqu'a 630 000 EUR)
+- UTILISATION: Inapplicable car CC a cause le manquement
+
+Clause 7 — Breach Call Option
+- CC acquiert toute l'IP pour 1$ en cas de breach
+- UTILISATION: Inapplicable (abus de droit)
+
+Clause 9.2 — Limitation responsabilite
+- Responsabilite CC plafonnee a 150 000 EUR
+- UTILISATION: Inapplicable en cas de faute grave (Art. 100 CO)
+
+Clause 9.3(iii) — Exception limitation
+- La limitation ne s'applique pas "to the extent the same may not be excluded or limited as a matter of law"
+- UTILISATION: Art. 100 CO interdit l'exoneration en cas de faute grave`,
+    keywords: ["articles", "loi", "art 97", "art 100", "art 101", "art 398", "art 2", "art 323-1", "art 314-1", "clause 6", "clause 7", "clause 9"]
+  },
+
+  // ---------------------------------------------------------------------------
   // ANALYSE STRATEGIQUE DE LA LETTRE
   // ---------------------------------------------------------------------------
   {
