@@ -111,9 +111,19 @@ QUALIFICATION JURIDIQUE:
 - Art. 101 CO: Responsabilite du fait des auxiliaires
 - Art. 398 CO: Exces de pouvoirs
 
+SUR LE PRETENDU "STANDARD DE L'INDUSTRIE":
+Si CC pretend que le transfert etait standard, qu'ils expliquent:
+1. Pourquoi etes-vous toujours Super Admin de notre BM ADN Production?
+2. Pourquoi nos pages ont-elles ete retirees de notre infrastructure?
+3. Pourquoi avons-nous ete retrograde au rang de simple Contributeur?
+4. Quel "standard" prevoit qu'un prestataire prenne le controle total?
+
+SUR LA POURSUITE DE LA COLLABORATION APRES OCTOBRE 2024:
+"En octobre 2024, nous avions un business a faire tourner. Face a la menace de M. Ojalvo d'etre 'ravi' de recuperer nos actifs, nous avons choisi de continuer plutot que de nous engager dans un conflit."
+
 CONCLUSION:
 Le piratage n'est pas un evenement fortuit. C'est la consequence directe d'une prise de controle imposee contre la volonte expresse d'ADN, constituant un abus de la confiance contractuelle.`,
-    keywords: ["transfert", "28 septembre", "2024", "origine", "litige", "contestation", "email"]
+    keywords: ["transfert", "28 septembre", "2024", "origine", "litige", "contestation", "email", "standard", "industrie"]
   },
 
   // ---------------------------------------------------------------------------
@@ -154,11 +164,35 @@ C. PAGE OYE: SEULE PAGE PIRATEE
 Oye est la SEULE page piratee parmi tout le portefeuille CC.
 DEMANDE: Expliquer pourquoi et quelles mesures de securite etaient (ou n'etaient pas) en place.
 
-D. INACTION DELIBEREE
+D. LE PIRATAGE A TOUCHE L'INFRASTRUCTURE DE CC, PAS CELLE D'ADN
+
+L'email de Meta du 27 aout 2025 identifie M. Mayorkas comme "le titulaire" du compte concerne.
+- Le piratage n'a pas touche un compte ADN Production
+- Il a touche un compte Copyright Capital
+
+DOCUMENTATION META:
+"Seuls les administrateurs d'un Business Manager peuvent transferer une page hors de ce Business Manager."
+ADN n'etait PAS administrateur du BM de CC.
+ADN n'avait AUCUN moyen technique de proteger ou recuperer la page.
+
+QUESTION CLE:
+"Si les pirates avaient exploite une faille generique de Meta, pourquoi n'auraient-ils pas cible des pages plus importantes — celles de MrBeast, de medias internationaux? Pourquoi uniquement Oye, et uniquement dans votre portefeuille?"
+
+CONCLUSION:
+La faille etait specifique a la gestion de CC. Pas a Meta. Pas a ADN.
+
+E. INACTION DELIBEREE
 
 6 mois sans action documentee pour recuperer la page.
 RDV technique du 23/12/2025 annule apres reception de la lettre ADN.
-= "Willful misconduct" au sens de la Clause 9.3.`,
+Aucune demarche pour signaler le contenu pornographique a Meta.
+= "Willful misconduct" au sens de la Clause 9.3.
+
+F. REFUS SYSTEMATIQUE DE TOUTE SOLUTION EQUITABLE
+
+- 31 oct 2025: Compte sequestre propose par Jerome → REFUSE par Jack
+- 14 oct 2024: Remboursement 150K EUR en 45j propose → REFUSE, ultimatum 24h
+CC a systematiquement refuse toute solution qui ne leur donnait pas un controle total.`,
     keywords: ["negligence", "2fa", "gmail", "cheick", "camara", "meta", "inaction", "willful misconduct"]
   },
 
@@ -217,8 +251,12 @@ PREJUDICE ADN (estimations provisoires):
 | Atteinte a l'image | Contenu pornographique publie pendant 5+ mois sous la garde de CC |
 | Perte de marches | Acces aux marches hispanophone et americain perdus |
 
-TOTAL CHIFFRE: 1 247 683 EUR
+TOTAL: Plus de 1 200 000 EUR
 (dans l'attente d'une expertise definitive)
+
+DOCUMENTATION:
+"Cette documentation existe. Elle sera produite dans le cadre de toute procedure."
+ADN reste dispose a soumettre l'evaluation a une expertise independante.
 
 INVERSION DU RAPPORT CREANCIER/DEBITEUR:
 "Nous ne sommes pas vos debiteurs. Nous sommes vos creanciers."

@@ -10,7 +10,7 @@ const DashboardPage = () => (
         <div className="w-12 h-12 bg-amber-500/20 rounded-lg flex items-center justify-center text-2xl">⚔️</div>
         <div className="flex-1">
           <div className="text-amber-300 font-semibold text-lg">SITUATION ACTUELLE — 16 janvier 2026</div>
-          <div className="text-slate-300 mt-2">Lettre offensive envoyée le 16 janvier 2026. Mise en demeure formelle avec délais : 15 jours pour documents et transfert des actifs, 30 jours pour position sur réparation du préjudice. Contre-créance ADN notifiée : 1 247 683 €.</div>
+          <div className="text-slate-300 mt-2">Lettre offensive envoyée le 16 janvier 2026. Mise en demeure formelle avec délais : 15 jours pour documents et transfert des actifs, 30 jours pour position sur réparation du préjudice. Contre-créance ADN notifiée : plus de 1 200 000 €.</div>
           <div className="mt-3 flex flex-wrap gap-2">
             <Badge type="invoked">Lettre envoyée 16/01</Badge>
             <Badge type="pending">Délai 15j : ~31 janvier</Badge>
@@ -23,7 +23,7 @@ const DashboardPage = () => (
 
     <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
       <StatCard label="Créance CC alléguée" value="~142 000 €" type="danger" />
-      <StatCard label="Contre-créance ADN" value="1 247 683 €" type="success" />
+      <StatCard label="Contre-créance ADN" value="+1,2M €" type="success" />
       <StatCard label="Déjà payé par ADN" value="~70 000 €" sublabel="Bonne foi démontrée" type="info" />
       <StatCard label="Mois d'inaction CC" value="6+" sublabel="Depuis juillet 2025" type="warning" />
     </div>
