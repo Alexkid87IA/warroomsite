@@ -41,7 +41,8 @@ CONSEQUENCES ANNONCEES:
 PIECES JOINTES:
 1. Copie lettre du 19 decembre 2025
 2. Copie email contestation du 14 octobre 2024
-3. Capture ecran Buzzly ("CC est responsable de cette Page")`,
+3. Copie email contestation du 16 octobre 2024 (transfert pages vers BM de CC)
+4. Capture ecran Buzzly ("CC est responsable de cette Page")`,
     keywords: ["lettre", "16 janvier", "2026", "mise en demeure", "resume", "delais"]
   },
 
@@ -83,25 +84,35 @@ Le silence de CC sur l'Art. 2 CC conforte la position d'ADN: l'activation des Cl
     id: "lettre-16-janvier-section-2",
     category: "lettres",
     title: "Lettre 16/01 — Section II: Le transfert non autorise",
-    content: `SECTION II — LA VRAIE ORIGINE DU LITIGE: LE TRANSFERT DU 28 SEPTEMBRE 2024
+    content: `SECTION II — LA VRAIE ORIGINE DU LITIGE: LA DOUBLE APPROPRIATION DE SEPTEMBRE-OCTOBRE 2024
 
 CE QUE LE CONTRAT PREVOYAIT:
 "Administrative access" avec statut de Super Administrateur, uniquement pour "adjust payment settings to collect revenues".
 
-CE QUE CC A FAIT:
-Le 28 septembre 2024, CC a unilateralement transfere les pages Facebook vers leur propre Business Manager.
+LA DOUBLE APPROPRIATION PAR CC:
 
-CONTESTATION D'ALEX (Email du 14 octobre 2024):
-"Dans nos echanges, il n'a jamais ete convenu que je perdrais totalement mes acces a mes plateformes. Le contrat stipule que vous deviez avoir un role de super-administrateur, uniquement pour ajuster les parametres de paiement."
+1. PRISE DE CONTROLE DU BUSINESS MANAGER D'ADN:
+- CC a retrogade ADN de Super Administrateur a simple Contributeur
+- ADN a perdu toute capacite a gerer la securite de ses propres actifs
 
-CONSEQUENCES DU TRANSFERT:
-En choisissant de transferer les actifs plutot que de se contenter de l'acces prevu:
-1. CC a depasse les termes du contrat
-2. CC a pris le controle technique exclusif
-3. CC a assume l'entiere responsabilite de la securite
+2. TRANSFERT DES PAGES VERS LE BM DE CC:
+- CC a transfere Oye, Buzzly, VoyagerLoin vers son propre Business Manager
+- Action NON autorisee par le contrat
+
+CONTESTATIONS D'ALEX:
+- Email du 14 octobre 2024: "Le contrat stipule que vous deviez avoir un role de super-administrateur, uniquement pour ajuster les parametres de paiement."
+- Email du 16 octobre 2024: "Vous avez purement et simplement retire mes pages de mon Business Manager et les avez transferees dans le votre, sans m'en avertir."
+
+CONFIRMATION PAR JONATHAN (Email 25 sept 2024):
+Le role de Super Admin se limitait aux "methodes de paiements".
+
+QUALIFICATION JURIDIQUE:
+- Art. 97 CO: Responsabilite pour inexecution
+- Art. 101 CO: Responsabilite du fait des auxiliaires
+- Art. 398 CO: Exces de pouvoirs
 
 CONCLUSION:
-Le piratage n'est pas un evenement fortuit. C'est la consequence directe d'une prise de controle imposee contre la volonte expresse d'ADN.`,
+Le piratage n'est pas un evenement fortuit. C'est la consequence directe d'une prise de controle imposee contre la volonte expresse d'ADN, constituant un abus de la confiance contractuelle.`,
     keywords: ["transfert", "28 septembre", "2024", "origine", "litige", "contestation", "email"]
   },
 
@@ -206,7 +217,7 @@ PREJUDICE ADN (estimations provisoires):
 | Atteinte a l'image | Contenu pornographique publie pendant 5+ mois sous la garde de CC |
 | Perte de marches | Acces aux marches hispanophone et americain perdus |
 
-FOURCHETTE TOTALE: 800 000 EUR a 1 300 000 EUR
+TOTAL CHIFFRE: 1 247 683 EUR
 (dans l'attente d'une expertise definitive)
 
 INVERSION DU RAPPORT CREANCIER/DEBITEUR:
@@ -245,10 +256,11 @@ A. COMMUNICATION PUBLIQUE
 - Communication basee sur faits verifiables et pieces documentees
 - CC peut apprecier les consequences sur sa reputation aupres des createurs
 
-B. PLAINTE PENALE
+B. PLAINTES PENALES
 - ADN est une societe francaise, actif exploite depuis la France
-- Droit de se proteger par les voies du droit francais
-- "Vous refusez d'assumer votre responsabilite. La justice francaise l'etablira a votre place."
+- Fondements juridiques:
+  * Art. 323-1 CP: Acces frauduleux a un systeme automatise (identifier auteurs + failles)
+  * Art. 314-1 CP: Abus de confiance (detournement actifs confies)
 - Elements verses a toute procedure ulterieure
 
 C. PROCEDURES ARBITRALES ET JUDICIAIRES
