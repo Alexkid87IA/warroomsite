@@ -11,6 +11,12 @@ import juridiqueChunks from './knowledge/09-juridique';
 import psychologieChunks from './knowledge/10-psychologie';
 import strategieChunks from './knowledge/11-strategie';
 import scenariosChunks from './knowledge/12-scenarios';
+import synthese2026Chunks from './knowledge/13-synthese-2026';
+import clausesCompletesChunks from './knowledge/14-clauses-completes';
+import strategieOffensiveChunks from './knowledge/15-strategie-offensive';
+import heinrichVogelChunks from './knowledge/16-heinrich-vogel';
+import transfert28SeptChunks from './knowledge/17-transfert-28-sept';
+import lettre16Janvier2026Chunks from './knowledge/18-lettre-16-janvier-2026';
 
 export type { KnowledgeChunk };
 
@@ -28,33 +34,51 @@ export const allChunks: KnowledgeChunk[] = [
   ...psychologieChunks,
   ...strategieChunks,
   ...scenariosChunks,
+  ...synthese2026Chunks,
+  ...clausesCompletesChunks,
+  ...strategieOffensiveChunks,
+  ...heinrichVogelChunks,
+  ...transfert28SeptChunks,
+  ...lettre16Janvier2026Chunks,
 ];
+
+// Fonction pour echapper les caracteres speciaux des regex
+function escapeRegex(str: string): string {
+  return str.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
 
 // Fonction de recherche
 export function searchKnowledge(query: string, maxResults: number = 6): KnowledgeChunk[] {
   const queryLower = query.toLowerCase();
   const queryWords = queryLower.split(/\s+/).filter(w => w.length > 2);
-  
+
   const scored = allChunks.map(chunk => {
     let score = 0;
     const contentLower = chunk.content.toLowerCase();
     const titleLower = chunk.title.toLowerCase();
-    
+
     for (const keyword of chunk.keywords) {
       if (queryLower.includes(keyword.toLowerCase())) score += 15;
       for (const word of queryWords) {
         if (keyword.toLowerCase().includes(word)) score += 5;
       }
     }
-    
+
     for (const word of queryWords) {
       if (titleLower.includes(word)) score += 12;
-      const matches = (contentLower.match(new RegExp(word, 'g')) || []).length;
-      score += Math.min(matches * 2, 10);
+      try {
+        const escapedWord = escapeRegex(word);
+        const matches = (contentLower.match(new RegExp(escapedWord, 'g')) || []).length;
+        score += Math.min(matches * 2, 10);
+      } catch {
+        // Si la regex echoue quand meme, on compte simplement les occurrences
+        const count = contentLower.split(word).length - 1;
+        score += Math.min(count * 2, 10);
+      }
     }
-    
+
     if (contentLower.includes(queryLower)) score += 20;
-    
+
     return { chunk, score };
   });
   

@@ -6,6 +6,59 @@ import { KnowledgeChunk } from '../types';
 
 export const emailsChunks: KnowledgeChunk[] = [
   // ─────────────────────────────────────────────────────────────────────────────
+  // EMAIL CRUCIAL — 25 SEPTEMBRE 2024 (PRÉ-SIGNATURE)
+  // ─────────────────────────────────────────────────────────────────────────────
+  {
+    id: "email-25-sept-2024-retours",
+    category: "emails",
+    title: "Email crucial du 25 septembre 2024 — Retours sur le contrat",
+    content: `EMAIL CRUCIAL — 25 SEPTEMBRE 2024
+
+⚠️ CET EMAIL PROUVE QUE CC A DÉPASSÉ LES TERMES CONVENUS
+
+DATE: 25 septembre 2024
+ÉCHANGE: Alex Quilghini ↔ Jonathan Mayorkas
+OBJET: Retours sur le contrat
+
+EMAIL D'ALEX (18h26):
+"Je préfère gérer la collecte des revenus moi-même, puis te reverser ta part après un reporting mensuel (J-60 pour Snapchat, J-30 pour Facebook). Ce processus évite les complications liées aux modifications des bénéficiaires sur les CMS des plateformes."
+
+"Je suis d'accord pour te donner accès aux performances et aux revenus, sans possibilité de modification ou publication du contenu."
+
+RÉPONSE DE JONATHAN (19h17):
+"sur Facebook on doit être « super admin » et avoir seul les droits de changer les méthodes de paiements ; cela dit, on peut laisser l'IBAN d'ADN, pas de souci."
+
+"On garde la main sur le compte UNIQUEMENT pour pouvoir agir s'il y a des défauts de règlements"
+
+ANALYSE JURIDIQUE:
+
+1. ALEX DEMANDAIT:
+   • Garder la collecte des revenus
+   • Donner un accès lecture (performances/revenus)
+   • Aucune modification du contenu
+
+2. JONATHAN A ACCEPTÉ:
+   • "super admin" pour les PAIEMENTS seulement
+   • "UNIQUEMENT pour agir s'il y a des défauts de règlements"
+   • Garder l'IBAN d'ADN
+
+3. CE QUE CC A FAIT (3 JOURS PLUS TARD):
+   • Transfert COMPLET des pages vers leur Business Manager
+   • Contrôle TOTAL, pas juste paiements
+   • ADN a perdu ses accès Super Admin
+
+⚠️ CONTRADICTION FLAGRANTE:
+Jonathan: "On garde la main UNIQUEMENT pour pouvoir agir s'il y a des défauts de règlements"
+Réalité: CC a pris le contrôle TOTAL des pages, pas juste les droits de paiement
+
+IMPORTANCE STRATÉGIQUE:
+Cet email prouve que le transfert du 28 septembre 2024 a DÉPASSÉ les termes convenus par écrit. CC n'avait pas l'autorisation de transférer les pages, seulement d'être "super admin" pour les paiements.
+
+FIABILITÉ: ✅ PROUVÉ (email conservé en PDF)`,
+    keywords: ["email", "25 septembre", "2024", "retours", "contrat", "super admin", "paiements", "transfert", "autorisation", "jonathan", "crucial"]
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────────
   // EMAIL CRUCIAL — 27 AOÛT
   // ─────────────────────────────────────────────────────────────────────────────
   {

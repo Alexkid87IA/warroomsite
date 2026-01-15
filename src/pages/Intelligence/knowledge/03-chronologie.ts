@@ -14,6 +14,18 @@ export const chronologieChunks: KnowledgeChunk[] = [
     title: "Septembre-Octobre 2024 — Signature des contrats",
     content: `CHRONOLOGIE 2024 — MISE EN PLACE DU CONTRAT
 
+25 SEPTEMBRE 2024 — EMAIL PRE-SIGNATURE (CRUCIAL):
+• Alex envoie email à Jonathan (18h26) avec ses retours sur le contrat
+• Alex demande explicitement: "Je préfère gérer la collecte des revenus moi-même"
+• Alex accepte: "accès aux performances et aux revenus, sans possibilité de modification ou publication"
+• Réponse Jonathan (19h17):
+  - "sur Facebook on doit être « super admin » et avoir seul les droits de changer les méthodes de paiements"
+  - "On garde la main sur le compte UNIQUEMENT pour pouvoir agir s'il y a des défauts de règlements"
+  - "on peut laisser l'IBAN d'ADN, pas de souci"
+• ⚠️ PREUVE: Jonathan a demandé des droits "super admin" pour les PAIEMENTS SEULEMENT
+• ⚠️ 3 jours plus tard, CC a fait bien PLUS que ça (transfert complet des pages)
+• FIABILITÉ: ✅ PROUVÉ (email conservé)
+
 25 SEPTEMBRE 2024:
 • Signature du License Agreement (General Conditions)
 • Signataires: Alex (ADN) et Jack Ojalvo (CC)
@@ -24,14 +36,16 @@ export const chronologieChunks: KnowledgeChunk[] = [
 • ADN reçoit 150 000 € (en 2 tranches: 65k + 85k)
 • FIABILITÉ: ✅ PROUVÉ
 
-28 SEPTEMBRE 2024:
+28 SEPTEMBRE 2024 — TRANSFERT NON AUTORISÉ:
 • CC devient admin du Business Manager d'ADN
 • CC enlève ADN du rôle Super Admin
 • ADN conteste: "C'est hors de question"
 • CC redonne des accès à ADN (niveau page seulement)
 • CC transfère les pages vers SON Business Manager
 • Résultat: ADN = admin des pages, mais PAS du BM de CC
-• FIABILITÉ: 🔶 CONFIRMÉ PAR ALEX
+• ⚠️ CONTRADICTION: Jonathan avait dit "on garde la main UNIQUEMENT pour agir sur défauts de règlements"
+• ⚠️ RÉALITÉ: CC a pris le contrôle TOTAL des pages, pas juste les droits de paiement
+• FIABILITÉ: ✅ PROUVÉ (email du 25/09 + contestation du 14/10)
 
 2 OCTOBRE 2024:
 • Signature de l'Amendment Protocol
