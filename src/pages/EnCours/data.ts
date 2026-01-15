@@ -1,182 +1,222 @@
 export const prochainActionData = {
-  action: "NE RIEN FAIRE",
-  date: "13 janvier 2026",
-  pourquoi: "Le silence est notre meilleure arme actuellement. CC ne sait pas ce qu'on prépare.",
-  exception: "Si CC relance → réponse ultra-minimale (2 lignes max)"
+  action: "ATTENDRE — Observer la réaction de CC",
+  date: "31 janvier 2026",
+  pourquoi: "La lettre offensive du 16 janvier a été envoyée. Le délai de 15 jours pour documents et transfert expire le ~31 janvier. On observe.",
+  exception: "Si CC propose une négociation sérieuse → évaluer. Tout par écrit."
 };
 
 export const ouEnEstOnData = {
-  resume: "CC a envoyé une lettre agressive le 26/12 pendant Noël. On maintient le SILENCE depuis 3 jours. Leur délai de paiement expire ~2 janvier. ILS N'ONT TOUJOURS PAS ENTREPRIS D'ACTION DOCUMENTÉE POUR RÉCUPÉRER OYE.",
+  resume: "LETTRE OFFENSIVE ENVOYÉE LE 16 JANVIER 2026. Mise en demeure formelle avec contre-créance notifiée (+1,2M€). Délais fixés : 15 jours pour documents/transfert, 30 jours pour position sur réparation. CC doit maintenant répondre ou subir les conséquences annoncées.",
   notreAction: {
-    quoi: "Lettre recommandée du 19 décembre",
-    contenu: "Mise en demeure invoquant Art. 82 CO, demande concernant Oye, transfert actifs restants, et réponse complète aux questions"
+    quoi: "Lettre offensive du 16 janvier 2026",
+    contenu: "Mise en demeure complète : constat des manquements, transfert 28 sept 2024 illégal, négligence (2FA, Gmail perso), contre-créance +1,2M€, délais 15j/30j, conséquences annoncées (communication publique, plainte pénale, arbitrage)"
   },
   leurAction: {
-    quoi: "Lettre agressive du 26 décembre (Emre Kumet)",
-    contenu: "Rejette tout, exige 11 351,89€ sous 5 jours, menace Clause 6+7, affirmations contredites par nos documents, NE RÉPOND PAS à notre demande concernant Oye"
+    quoi: "Email Martin Febvre du 12 janvier 2026",
+    contenu: "CC IGNORE notre lettre du 19/12 et l'Art. 82 CO. Demande paiement de 6 000€ (minimum garanti) + relevés bancaires. Continue comme si de rien n'était."
   },
   delais: [
     {
-      titre: "Récupération page Oye",
-      statut: "NON FAIT — CC n'a entrepris aucune action documentée depuis 5 mois",
-      type: "red" as const
-    },
-    {
-      titre: "Transfert actifs (29/12)",
-      statut: "EXPIRÉ — CC n'a pas transféré Buzzly/VoyagerLoin",
-      type: "red" as const
-    },
-    {
-      titre: "Paiement CC (~2 jan)",
-      statut: "En cours — on ne paiera PAS",
+      titre: "Délai 15 jours (~31 jan)",
+      statut: "Documents + Transfert Buzzly/VoyagerLoin",
       type: "amber" as const
     },
     {
-      titre: "Réponse complète (13 jan)",
-      statut: "À venir — on attend leurs réponses",
+      titre: "Délai 30 jours (~15 fév)",
+      statut: "Position formelle sur réparation préjudice",
       type: "blue" as const
+    },
+    {
+      titre: "Si silence ou refus CC",
+      statut: "Communication publique + Plainte pénale + Arbitrage",
+      type: "red" as const
     }
   ]
 };
 
 export const strategieData = {
-  nom: "SILENCE STRATÉGIQUE",
-  periode: "Jusqu'au 13 janvier minimum",
+  nom: "EXÉCUTION — Faire ce qu'on a annoncé",
+  periode: "16 janvier → 15 février 2026",
   pourquoiSilence: [
-    "CC est en mode réactif (réponse en 4 jours pendant Noël) — le silence les déstabilise plus qu'une réponse",
-    "Emre Kumet est RÉACTIF — il a besoin d'un adversaire à qui répondre. Sans réponse, il ne sait pas quoi faire",
-    "Chaque jour de silence = incertitude pour eux. Ils ne savent pas ce qu'on prépare",
-    "Notre lettre du 19/12 reste la référence — elle n'a pas besoin d'être renforcée",
-    "Leur délai de paiement va expirer (~2 jan) — on observe leur réaction avant de bouger",
-    "5 MOIS sans action documentée pour récupérer Oye — chaque jour qui passe documente leur inaction"
+    "La lettre du 16 janvier est notre position officielle — elle n'a pas besoin de renforts",
+    "CC sait maintenant exactement ce qu'on attend et les conséquences",
+    "Le silence montre qu'on est sérieux — pas besoin de relancer",
+    "Chaque jour qui passe sans réponse de CC = preuve supplémentaire de leur mauvaise foi",
+    "Si CC veut négocier, c'est à EUX de venir vers nous maintenant"
   ],
-  message: "On a un dossier solide, on n'est pas pressé, on les laisse s'enfoncer dans leurs contradictions.",
+  message: "On a dit ce qu'on allait faire. Maintenant on le fait. Pas de bluff.",
   risques: [
     {
-      risque: "Ils interprètent le silence comme une faiblesse",
-      probabilite: "Faible",
-      reponse: "Leur lettre du 26/12 montre qu'ils sont réactifs, pas confiants"
+      risque: "CC ne répond pas du tout",
+      probabilite: "40%",
+      reponse: "Parfait. On exécute exactement ce qu'on a annoncé : communication publique, plainte pénale, arbitrage."
     },
     {
-      risque: "Ils passent à l'action juridique",
-      probabilite: "Faible",
-      reponse: "Coûterait 150-300k€ pour potentiellement récupérer 0€. Pas rationnel."
+      risque: "CC contre-attaque agressivement",
+      probabilite: "45%",
+      reponse: "Attendu. On reste calme, on documente, on maintient nos positions."
+    },
+    {
+      risque: "CC propose une négociation",
+      probabilite: "15%",
+      reponse: "Écouter MAIS tout par écrit. Conditions minimales non négociables."
     }
   ],
   changementSi: [
-    "Si CC envoie une mise en demeure formelle avec menace d'action imminente",
-    "Si CC engage une procédure réelle (pas juste des menaces)",
-    "Si une opportunité de négociation se présente"
+    "CC fait une proposition sérieuse (par écrit) avec engagement sur nos conditions minimales",
+    "Nouveau développement majeur qui change la donne",
+    "Conseil juridique spécifique recommandant une autre approche"
   ]
 };
 
 export const phases = [
   {
     numero: 1,
-    nom: "ATTENTE ACTIVE",
-    periode: "29 déc 2025 → 13 jan 2026",
+    nom: "PÉRIODE D'OBSERVATION",
+    periode: "16 jan → 31 jan 2026",
     statut: "EN COURS" as const,
     couleur: "cyan" as const,
-    quoi: "Maintenir le silence complet. Observer. Ne pas répondre à leur lettre du 26/12.",
+    quoi: "Observer la réaction de CC à notre lettre offensive. Ne pas relancer.",
     pourquoi: [
-      "Le silence déstabilise leur stratégie réactive",
-      "On ne leur donne aucune information sur notre position",
-      "On leur laisse le temps de s'enfoncer (plus ils parlent, plus ils font des erreurs potentielles)",
-      "On conserve notre énergie pour la suite"
+      "La lettre du 16 janvier est complète — elle n'a pas besoin de renforts",
+      "CC a reçu un ultimatum clair avec délais et conséquences",
+      "Le silence de notre part = confiance et détermination",
+      "On leur laisse le temps de réaliser la gravité de la situation"
     ],
     comment: [
-      "NE PAS répondre à leur lettre du 26/12",
-      "NE PAS relancer sur le transfert des actifs",
-      "Documenter silencieusement tout ce qui se passe",
-      "Si CC relance : réponse minimale de 2 lignes max"
+      "NE PAS relancer CC",
+      "NE PAS répondre aux provocations éventuelles",
+      "Documenter tout ce qui se passe",
+      "Préparer les actions suivantes (communication, plainte)"
     ],
     exception: {
-      si: "CC envoie une relance agressive entre le 3 et le 10 janvier",
-      alors: "Email ultra-court : 'Nous prenons note. Nos positions restent celles du 19 décembre. Nous attendons votre réponse complète avant le 13 janvier.'"
+      si: "CC propose une négociation sérieuse par écrit",
+      alors: "Évaluer. Exiger d'abord le transfert de Buzzly/VoyagerLoin comme preuve de bonne foi."
     }
   },
   {
     numero: 2,
-    nom: "CONSTAT",
-    periode: "14-15 jan 2026",
+    nom: "PREMIER DÉLAI — DOCUMENTS",
+    periode: "~31 janvier 2026",
     statut: "PLANIFIÉ" as const,
     couleur: "purple" as const,
-    quoi: "Envoyer une lettre de constat listant tous les manquements documentés de CC.",
+    quoi: "Constater si CC a fourni les documents et transféré les actifs.",
     pourquoi: [
-      "Le délai du 13 janvier sera expiré — on peut constater leur défaut de réponse",
-      "On documente officiellement : non-transfert des actifs, silence sur nos questions, contradiction 2FA",
-      "On prépare le terrain pour l'escalade en créant une trace écrite complète",
-      "On montre qu'on est méthodique et patient — pas impulsif"
+      "Délai de 15 jours fixé dans la lettre du 16 janvier",
+      "CC devait fournir : rapport récupération Oye, logs 2FA, échanges Meta",
+      "CC devait transférer : Buzzly et VoyagerLoin",
+      "L'absence de réponse = refus tacite = on passe à l'exécution"
     ],
     comment: [
-      "Lettre recommandée avec AR",
-      "Ton factuel, pas agressif",
-      "Liste des faits sans sur-interprétation",
-      "Annonce de 'la suite des démarches' sans détailler"
+      "Vérifier si documents reçus",
+      "Vérifier si transfert effectué dans Business Manager",
+      "Si rien : constater le défaut par écrit",
+      "Préparer la communication publique"
     ],
     contenu: [
-      "Constat #1 : INACTION DOCUMENTÉE sur Oye — Aucune mesure de récupération documentée depuis 5 mois malgré promesse de Jack (crédits Meta)",
-      "Constat #2 : PRÉJUDICE QUE NOUS ESTIMONS IRRÉVERSIBLE — Le préjudice reste DÛ indépendamment de toute récupération éventuelle",
-      "Constat #3 : Non-respect du délai du 29/12 (transfert actifs non effectué)",
-      "Constat #4 : Absence de réponse aux questions posées le 19/12 (rapport récupération, logs 2FA, échanges Meta)",
-      "Constat #5 : Contradiction documentée sur le 2FA (vous affirmez qu'il était actif, Meta recommande de l'activer)",
-      "Constat #6 : La page Oye existait au 03/09/2025 sous contrôle de tiers (contredit 'no evidence of compromise')",
-      "Annonce : 'Face à ces constats, nous maintenons notre demande de compensation intégrale et poursuivrons les démarches nécessaires.'"
+      "Email de constat si pas de réponse : 'Nous constatons l'absence de réponse à notre délai du 31 janvier.'",
+      "Rappel des conséquences annoncées",
+      "Annonce de la mise en œuvre imminente"
     ]
   },
   {
     numero: 3,
-    nom: "ESCALADE",
-    periode: "Fin janvier 2026",
+    nom: "EXÉCUTION — COMMUNICATION PUBLIQUE",
+    periode: "Début février 2026",
     statut: "EN RÉSERVE" as const,
     couleur: "red" as const,
-    quoi: "Dépôt de plainte pénale pour accès frauduleux à un système informatique (Art. 323-1 Code Pénal).",
+    quoi: "Communication publique sur l'affaire (obligation morale envers 1,2M d'abonnés).",
     pourquoi: [
-      "Coût : 0€ pour nous — procédure gratuite",
-      "Pression maximale sur CC — la dimension pénale change la donne",
-      "Procédure en France — pas besoin d'aller en Suisse",
-      "Publicité potentielle — CC préférerait éviter",
-      "Force CC à justifier pourquoi ils avaient le contrôle exclusif sans protection 2FA adéquate (selon nos éléments)"
+      "Annoncé dans la lettre du 16 janvier — on fait ce qu'on a dit",
+      "1,2 million de personnes méritent de savoir ce qui est arrivé à Oye",
+      "Pression publique maximale sur CC",
+      "Crédibilité : si on ne le fait pas, on perd tout pouvoir de négociation futur"
     ],
     comment: [
-      "Plainte au commissariat ou procureur",
-      "Viser les PIRATES (pas CC directement) — mais CC devra s'expliquer en tant que gestionnaire",
-      "Fournir les éléments : emails Meta, page existant au 03/09, historique",
-      "Demander une enquête sur comment le piratage a pu se produire"
+      "Post sur les réseaux restants (Instagram, YouTube si applicable)",
+      "Ton factuel : expliquer ce qui s'est passé sans diffamation",
+      "Documenter les faits : piratage, inaction de CC, contre-créance",
+      "Inviter la communauté à comprendre pourquoi Oye a disparu"
     ],
-    condition: "À déclencher uniquement si Phase 2 n'a pas produit d'effet, ou si CC escalade"
+    condition: "À déclencher si CC n'a pas répondu sérieusement au délai du 31 janvier"
   },
   {
     numero: 4,
-    nom: "NÉGOCIATION FINALE",
+    nom: "EXÉCUTION — PLAINTE PÉNALE",
     periode: "Février 2026",
-    statut: "OBJECTIF" as const,
-    couleur: "emerald" as const,
-    quoi: "Proposer un accord global si CC montre des signes de capitulation.",
+    statut: "EN RÉSERVE" as const,
+    couleur: "red" as const,
+    quoi: "Dépôt de plainte pénale en France pour accès frauduleux (Art. 323-1 CP) et abus de confiance (Art. 314-1 CP).",
     pourquoi: [
-      "L'objectif n'est pas la guerre — c'est de sortir de cette situation",
-      "Si CC comprend qu'ils ne récupéreront potentiellement rien et risquent une procédure pénale, ils négocieront probablement",
-      "Un accord coûte 0€, un arbitrage coûte 150-300k€ à CC"
+      "Annoncé dans la lettre du 16 janvier — on fait ce qu'on a dit",
+      "Coût : 0€ pour nous — procédure gratuite",
+      "Dimension pénale = pression maximale sur CC",
+      "Permet une enquête officielle sur les circonstances du piratage"
     ],
     comment: [
-      "Attendre un signal de CC (proposition, appel, ton différent)",
-      "Tout par écrit — pas de call sans trace",
-      "Exiger les conditions minimales AVANT toute discussion de détail",
-      "Ne pas montrer d'empressement — on a le temps"
+      "Plainte au commissariat ou directement au procureur",
+      "Fournir tous les éléments : emails, chronologie, preuves 2FA",
+      "Art. 323-1 CP : accès frauduleux au système",
+      "Art. 314-1 CP : abus de confiance (transfert du 28 sept sans accord)"
+    ],
+    condition: "À déclencher en parallèle ou après la communication publique"
+  },
+  {
+    numero: 5,
+    nom: "SECOND DÉLAI — RÉPARATION",
+    periode: "~15 février 2026",
+    statut: "PLANIFIÉ" as const,
+    couleur: "purple" as const,
+    quoi: "Constater la position de CC sur la réparation du préjudice.",
+    pourquoi: [
+      "Délai de 30 jours fixé dans la lettre du 16 janvier",
+      "CC devait prendre position sur notre contre-créance (+1,2M€)",
+      "L'absence de position = refus de négocier = arbitrage"
+    ],
+    comment: [
+      "Vérifier si CC a pris position par écrit",
+      "Si proposition insuffisante : refuser et maintenir nos demandes",
+      "Si rien : constater et préparer la procédure arbitrale",
+      "Contacter un avocat suisse pour lancer l'arbitrage"
+    ],
+    contenu: [
+      "Évaluation de toute proposition de CC",
+      "Comparaison avec nos conditions minimales",
+      "Décision : accepter, contre-proposer, ou arbitrage"
+    ]
+  },
+  {
+    numero: 6,
+    nom: "ARBITRAGE",
+    periode: "Mars 2026+",
+    statut: "OBJECTIF" as const,
+    couleur: "emerald" as const,
+    quoi: "Si nécessaire : procédure arbitrale en Suisse selon les clauses du contrat.",
+    pourquoi: [
+      "Dernier recours si CC refuse toute négociation raisonnable",
+      "Notre contre-créance (+1,2M€) dépasse largement leur créance (142k€)",
+      "Arbitrage coûterait 150-300k€ à CC — ils n'ont pas intérêt",
+      "Notre dossier est solide : Art. 82 CO, négligence, transfert illégal"
+    ],
+    comment: [
+      "Engager un avocat suisse spécialisé",
+      "Préparer le dossier complet",
+      "Invoquer l'exception d'inexécution (Art. 82 CO)",
+      "Demander compensation intégrale + dommages"
     ],
     conditionsMin: [
       "Annulation complète de la dette restante (~142k€)",
-      "Compensation financière pour Oye (200-500k€) — DUE INDÉPENDAMMENT de toute récupération",
-      "Transfert immédiat de Buzzly et VoyagerLoin vers BM d'ADN",
-      "Quitus mutuel — plus aucune réclamation possible"
+      "Compensation pour préjudice Oye (800k€ - 1,3M€)",
+      "Transfert de tous les actifs restants",
+      "Quitus mutuel"
     ],
     leviers: [
-      "Lettre de Jack du 17/10/24 ('we can live with it') — pièce maîtresse",
-      "5 MOIS sans action documentée pour récupérer Oye — négligence documentée",
-      "Promesse de Jack le 14/11 d'utiliser ses 'crédits Meta' — jamais tenue",
-      "Aveu documenté de passivité de Jonathan du 14/11/25",
-      "Recommandation Meta suggérant fortement que le 2FA n'était pas actif",
-      "Plainte pénale en cours ou imminente"
+      "Email 25 sept 2024 : CC ne demandait que 'super admin' pour paiements",
+      "Transfert illégal du 28 sept 2024 : dépassement du mandat",
+      "5+ mois d'inaction documentée sur récupération Oye",
+      "Contradiction 2FA : Meta recommande d'activer ce que CC dit 'toujours actif'",
+      "Double Gmail perso : négligence organisationnelle",
+      "Synthèse des 9 experts : verdict unanime contre CC"
     ]
   }
 ];
@@ -184,65 +224,65 @@ export const phases = [
 export const arbreDecision = [
   {
     emoji: "🔇",
-    si: "Rien jusqu'au 13 janvier",
-    alors: "Lettre de constat le 14-15 janvier"
+    si: "Silence total de CC jusqu'au 31 janvier",
+    alors: "Email de constat du défaut → Communication publique → Plainte pénale"
   },
   {
     emoji: "📧",
-    si: "Relance agressive par email (3-10 jan)",
-    alors: "Email de 2 lignes : 'Nos positions restent celles du 19/12. Nous attendons votre réponse complète.'"
+    si: "CC répond de manière agressive / rejette tout",
+    alors: "Pas de réponse. On exécute comme prévu. Leur agressivité renforce notre position."
   },
   {
-    emoji: "🎭",
-    si: "Prétend récupérer Oye ou faire des efforts",
-    alors: "Exiger preuve écrite + expertise indépendante. Rappeler: 'Le préjudice que nous estimons irréversible reste dû, la récupération ne restitue pas la valeur détruite après 5 mois.'"
+    emoji: "💰",
+    si: "CC propose de négocier (même partiellement)",
+    alors: "Écouter MAIS exiger d'abord le transfert de Buzzly/VoyagerLoin comme preuve de bonne foi. Tout par écrit."
   },
   {
-    emoji: "⚠️",
-    si: "Mise en demeure formelle avec menace imminente",
-    alors: "Évaluer si on accélère la Phase 2 (lettre de constat) ou si on répond point par point"
-  },
-  {
-    emoji: "🤝",
-    si: "Propose une discussion / négociation",
-    alors: "Accepter d'écouter MAIS tout par écrit. Pas de call. Conditions minimales non négociables."
+    emoji: "📄",
+    si: "CC fournit les documents demandés",
+    alors: "Analyser. Vérifier la cohérence. Maintenir la demande de réparation pour le préjudice."
   },
   {
     emoji: "⚔️",
-    si: "Engage une procédure d'arbitrage",
-    alors: "Contre-attaque : exception d'inexécution (Art. 82 CO), contre-créance que nous estimons à 1M€+, éléments de négligence documentés, 5 mois d'inaction"
+    si: "CC engage une procédure d'arbitrage en premier",
+    alors: "Contre-créance de +1,2M€. Exception d'inexécution (Art. 82 CO). Dossier complet avec tous nos leviers."
+  },
+  {
+    emoji: "🤝",
+    si: "CC accepte nos conditions minimales",
+    alors: "Accord écrit. Vérifier exécution. Quitus mutuel APRÈS réception des fonds et actifs."
   }
 ];
 
 export const journalBord = [
   {
+    date: "16 jan 2026",
+    heure: "10h00",
+    evenement: "LETTRE OFFENSIVE ENVOYÉE — Mise en demeure complète avec contre-créance +1,2M€, délais 15j/30j, conséquences annoncées.",
+    decision: "Phase d'observation. Ne rien faire jusqu'au 31 janvier sauf si CC propose une négociation sérieuse."
+  },
+  {
+    date: "15 jan 2026",
+    heure: "23h00",
+    evenement: "Finalisation lettre avec synthèse des 9 experts. Ajout Art. 314-1 CP (abus de confiance) et concept de 'double appropriation'.",
+    decision: "Lettre prête. Envoi demain matin."
+  },
+  {
+    date: "12 jan 2026",
+    heure: "16h40",
+    evenement: "Email Martin Febvre (CC) — Demande paiement 6 000€ + relevés. CC IGNORE notre lettre du 19/12 et l'Art. 82 CO.",
+    decision: "Ne pas répondre. Preuve supplémentaire de leur mauvaise foi. Inclure dans la lettre offensive."
+  },
+  {
+    date: "13 jan 2026",
+    heure: "00h00",
+    evenement: "Délai de réponse complète de CC EXPIRÉ. Aucun document fourni, aucune réponse aux questions.",
+    decision: "Constater le défaut dans la lettre offensive du 16 janvier."
+  },
+  {
     date: "2 jan 2026",
     heure: "01h00",
-    evenement: "MISE À JOUR V4.3 — Documentation complète visio 31/10: Jérôme (DG) propose compte séquestre à CC, Jack REFUSE immédiatement.",
-    decision: "Pattern confirmé: CC refuse systématiquement toute solution collaborative (150k€ oct 2024, compte séquestre 31/10). Preuve que CC préfère contrôle unilatéral à protection mutuelle. Ajout dans Evidence, Psychology, Chronology, Meeting14Nov."
-  },
-  {
-    date: "30 déc 2025",
-    heure: "00h30",
-    evenement: "MISE À JOUR V4.2 — Intégration docs 31/10: 2ème Gmail perso découvert (Joel Cooper) = éléments de négligence systématique.",
-    decision: "Nouvel onglet 'Gmail 🚨'. 2 personnes sur 2 utilisent Gmail perso = potentielle faute organisationnelle (Art. 100 CO)."
-  },
-  {
-    date: "29 déc 2025",
-    heure: "22h30",
-    evenement: "MISE À JOUR V4.1 — Clarification stratégique: préjudice Oye que nous estimons IRRÉVERSIBLE et DÛ indépendamment de toute récupération.",
-    decision: "Formulation CONSTAT (pas DEMANDE) pour Oye. Ne jamais lier récupération à fin du préjudice."
-  },
-  {
-    date: "29 déc 2025",
-    heure: "21h00",
-    evenement: "Mise à jour War Room avec emails octobre 2024. Lettre de Jack du 17/10 documente son acceptation explicite du scénario de prise de contrôle.",
-    decision: "Continuer le silence. La lettre de Jack sera notre pièce maîtresse en négociation ou arbitrage."
-  },
-  {
-    date: "29 déc 2025",
-    heure: "18h00",
-    evenement: "Délai transfert actifs (29/12) expiré. CC n'a pas transféré Buzzly et VoyagerLoin.",
-    decision: "Ne pas relancer. Constater dans la lettre du 14-15 janvier."
+    evenement: "Mise à jour War Room v4.3 — Documentation complète. Pattern confirmé : CC refuse systématiquement toute solution collaborative.",
+    decision: "Continuer la préparation de la lettre offensive."
   }
 ];
