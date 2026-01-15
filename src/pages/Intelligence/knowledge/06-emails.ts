@@ -376,6 +376,63 @@ QUESTIONS SOULEVÉES:
 FIABILITÉ: ✅ PROUVÉ (documents transmis)`,
     keywords: ["email", "31 octobre", "documents", "joel", "cooper", "transmission", "découverte"]
   }
+  // ─────────────────────────────────────────────────────────────────────────────
+  // EMAIL MARTIN FEBVRE — 12 JANVIER 2026
+  // ─────────────────────────────────────────────────────────────────────────────
+  {
+    id: "email-12-janvier-2026-febvre",
+    category: "emails",
+    title: "Email Martin Febvre — 12 janvier 2026 (demande paiement)",
+    content: `EMAIL MARTIN FEBVRE — 12 JANVIER 2026
+
+⚠️ CC IGNORE L'ART. 82 CO ET CONTINUE À EXIGER DES PAIEMENTS
+
+EXPÉDITEUR: Martin Febvre (Copyright Capital — Comptabilité)
+DESTINATAIRES: Alex, Jérôme, Tabatha, Frédéric, Jonathan, accounting
+DATE: Lundi 12 janvier 2026 à 16h40
+OBJET: "Copyright Capital - facture décembre 2025 + demande d'éléments de revenus"
+
+CONTENU:
+"Bonjour Alex, bonjour Jérôme,
+
+Pouvez-vous s'il vous plaît nous transmettre rapidement les éléments suivants afin que nous procédions au partage des revenus du mois de décembre ?
+• Le relevé bancaire d'ADN Prod de décembre 2025
+• Le relevé Snapchat de 11-2025 (revenus qui seront payés par Snap en janvier)
+
+En attendant ces éléments, je vous prie de trouver ci-joint une facture provisoire pour le mois de décembre, sur la base du minimum garanti mensuel de 6 000 € (déduction faite des revenus AdSense de YT que nous avons directement collectés).
+
+Cette facture est à régler DÈS RÉCEPTION, s'il vous plaît."
+
+PIÈCE JOINTE: invoice_2026-01-...pdf (facture 6 000 €)
+
+ANALYSE:
+
+1. NOUVEAU CONTACT CC:
+   • Martin Febvre — jamais mentionné avant
+   • Rôle: Comptabilité
+   • CC élargit le cercle des intervenants
+
+2. CC IGNORE TOTALEMENT:
+   • La lettre ADN du 19 décembre 2025
+   • L'invocation de l'Art. 82 CO (exception d'inexécution)
+   • La suspension des paiements
+   • La demande de documents et transfert
+
+3. CC CONTINUE COMME SI DE RIEN N'ÉTAIT:
+   • Demande des relevés bancaires
+   • Envoie une facture de 6 000 €
+   • Exige paiement "dès réception"
+
+4. TIMING:
+   • 4 jours AVANT la lettre offensive ADN du 16 janvier
+   • 1 jour AVANT l'expiration du délai de réponse (13 janvier)
+
+VALEUR PROBANTE:
+Cet email prouve que CC n'a pris AUCUNE mesure suite à la lettre ADN du 19 décembre. Ils continuent à exiger des paiements en ignorant l'exception d'inexécution invoquée.
+
+FIABILITÉ: ✅ PROUVÉ (email conservé)`,
+    keywords: ["email", "12 janvier", "2026", "martin", "febvre", "facture", "paiement", "ignore", "art 82"]
+  }
 ];
 
 export default emailsChunks;

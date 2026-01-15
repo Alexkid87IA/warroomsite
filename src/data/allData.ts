@@ -36,7 +36,8 @@ export const DATA = {
         { name: "Jonathan Mayorkas", role: "Associé / Co-fondateur", key: true, email: "jonathan@copyrightcapital.com", emailPerso: "jmayorkas2@gmail.com", note: "Gmail perso utilisé comme Super Admin" },
         { name: "Joel Cooper", role: "Director of DRM & Operations", key: true, email: "joelcooper@copyrightcapital.com", emailPerso: "joelcoopercinema@gmail.com", note: "Gmail perso utilisé pour contacts Meta — 2ème Gmail perso découvert 31/10" },
         { name: "Emre Kumet", role: "Head of Legal", key: true, email: "emrekumet@copyrightcapital.com" },
-        { name: "Frédéric Porcherot", role: "Recouvrement", key: false }
+        { name: "Frédéric Porcherot", role: "Recouvrement", key: false },
+        { name: "Martin Febvre", role: "Comptabilité", key: false, note: "Apparu le 12/01/2026 — demande paiement ignorant Art. 82 CO" }
       ]
     },
     meta: {

@@ -301,6 +301,58 @@ STRATÉGIE ADN — PHASE SILENCE:
   },
 
   // ─────────────────────────────────────────────────────────────────────────────
+  // 2026 — JANVIER
+  // ─────────────────────────────────────────────────────────────────────────────
+  {
+    id: "chrono-2026-janvier",
+    category: "chronologie",
+    title: "Janvier 2026 — Escalade finale",
+    content: \`CHRONOLOGIE JANVIER 2026
+
+12 JANVIER 2026 — EMAIL MARTIN FEBVRE (CC):
+• Nouveau contact CC: Martin Febvre (comptabilité)
+• Destinataires: Alex, Jérôme, Tabatha, Frédéric, Jonathan, accounting
+• Demande:
+  - Relevé bancaire ADN Prod de décembre 2025
+  - Relevé Snapchat de 11-2025
+• Joint: Facture provisoire de 6 000 € (minimum garanti)
+• Exigence: "Cette facture est à régler DÈS RÉCEPTION"
+• ⚠️ CC IGNORE TOTALEMENT la lettre ADN du 19/12 et l'Art. 82 CO
+• ⚠️ CC continue à exiger des paiements comme si de rien n'était
+• FIABILITÉ: ✅ PROUVÉ (email conservé)
+
+13 JANVIER 2026:
+• Délai de réponse complète de CC EXPIRÉ
+• CC n'a fourni AUCUN des documents demandés:
+  ❌ Rapport d'enquête interne
+  ❌ Logs Business Manager
+  ❌ Échanges complets avec Meta
+  ❌ Position sur responsabilité
+• FIABILITÉ: ✅ PROUVÉ
+
+16 JANVIER 2026 — LETTRE OFFENSIVE ADN:
+• Auteur: Alexandre Quilghini, Président ADN Production SAS
+• Destinataires: Jack Ojalvo, Emre Kumet, Jonathan Mayorkas
+• Envoi: Recommandé AR + Email
+• Contenu:
+  - Constat des manquements de CC
+  - Mise en avant du transfert du 28 septembre 2024
+  - Caractérisation de la négligence (2FA, Gmail perso, inaction)
+  - Inapplicabilité de la limitation de responsabilité (Clause 9.3)
+  - Notification contre-créance ADN: 800 000 € à 1 300 000 €
+  - Mise en demeure avec délais
+• DÉLAIS FIXÉS:
+  - 15 jours (~31 janvier): Documents + Transfert Buzzly/VoyagerLoin
+  - 30 jours (~15 février): Position formelle sur réparation
+• CONSÉQUENCES ANNONCÉES si pas de réponse:
+  1. Communication publique (obligation morale envers 1,2M personnes)
+  2. Plainte pénale en France
+  3. Procédures arbitrales et judiciaires
+• FIABILITÉ: ✅ PROUVÉ (lettre envoyée)\`,
+    keywords: ["janvier", "2026", "martin", "febvre", "facture", "lettre", "offensive", "contre-créance", "délais"]
+  },
+
+  // ─────────────────────────────────────────────────────────────────────────────
   // LES 3 IDS DE PAGE
   // ─────────────────────────────────────────────────────────────────────────────
   {
