@@ -430,4 +430,357 @@ Fais ce que tu as dit. Le reste suivra."`,
   }
 ];
 
+  // ---------------------------------------------------------------------------
+  // ANALYSE RICHARD STAVROS (INSIDER)
+  // ---------------------------------------------------------------------------
+  {
+    id: "expert-stavros-insider",
+    category: "strategie",
+    title: "Richard Stavros — Ce que CC ne veut pas que tu saches",
+    content: `RICHARD STAVROS — ANCIEN CEO FONDS MEDIAS (INSIDER)
+
+PROFIL:
+- CEO de Catalyst Media Partners (2012-2021) — fonds de 180M$
+- Portefeuille de 400+ pages/chaines, 850 millions d'abonnes cumules
+- 200+ deals avec des createurs
+- 3 incidents de piratage majeurs (pertes: 12M$)
+
+CE QUE LES FONDS COMME CC FONT VRAIMENT:
+
+| Ce qu'ils disent | Ce qu'ils font |
+|------------------|----------------|
+| "On va optimiser vos revenus" | Extraire le max avant depreciation |
+| "On s'occupe de tout" | Prendre le controle total |
+| "C'est un partenariat" | C'est une acquisition deguisee |
+| "Le contrat vous protege" | Le contrat NOUS protege |
+
+LA VRAIE RAISON DE L'AGRESSIVITE DE CC:
+"Quand une page comme Oye disparait, ca cree un TROU dans leur P&L. Leurs investisseurs vont poser des questions. C'est pour ca qu'ils sont agressifs — ils essaient de recuperer l'argent perdu."
+
+LEUR PLUS GRANDE PEUR:
+"Leur business repose sur la CONFIANCE. Si tu detruis leur reputation dans la communaute des createurs, leur business est FINI. Pas dans 5 ans. Dans 6 mois."
+
+SON VERDICT:
+"Tu as plus de pouvoir que tu ne le crois. Ils ne sont pas agressifs parce qu'ils sont forts — parce qu'ils ont peur."`,
+    keywords: ["stavros", "insider", "fonds", "confiance", "peur", "reputation"]
+  },
+
+  // ---------------------------------------------------------------------------
+  // ANALYSE THOMAS LECLERC (JOURNALISTE)
+  // ---------------------------------------------------------------------------
+  {
+    id: "expert-leclerc-journaliste",
+    category: "strategie",
+    title: "Thomas Leclerc — Potentiel mediatique du dossier",
+    content: `THOMAS LECLERC — JOURNALISTE D'INVESTIGATION (MEDIAPART)
+
+PROFIL:
+- 14 ans d'experience, Prix Albert Londres 2019
+- Specialiste des scandales tech/finance et litiges createurs
+
+TEST DES 5 QUESTIONS:
+1. Victime identifiable? OUI — ADN Production
+2. "Mechant" identifiable? OUI — Copyright Capital
+3. Enjeu au-dela du cas particulier? OUI — economie des createurs
+4. Preuves documentees? PARTIELLEMENT
+5. Interet public? OUI — avertissement createurs
+
+VERDICT: Histoire PUBLIABLE (score 4.5/5)
+
+L'ANGLE QUI L'INTERESSE:
+"Comment des fonds d'investissement prennent le controle des actifs des createurs — et ce qui se passe quand ca tourne mal."
+
+TITRES POTENTIELS:
+- "Quand les fonds d'investissement s'emparent des createurs: l'affaire Copyright Capital"
+- "Il a confie sa page Facebook a un fonds suisse. Elle a ete piratee. Il doit maintenant 142 000 euros."
+
+CE QUI FERAIT BASCULER L'HISTOIRE:
+- Un autre createur victime de CC temoigne
+- Un employe CC parle anonymement
+- CC fait une erreur de communication (effet Streisand)
+
+CONSEIL:
+"Ne contacte PAS les journalistes toi-meme — ca sent le desespoir. Si ton histoire est bonne, ils viendront."`,
+    keywords: ["leclerc", "journaliste", "mediapart", "publication", "medias", "angle"]
+  },
+
+  // ---------------------------------------------------------------------------
+  // ANALYSE MAXIME DUFOUR (CREATEUR)
+  // ---------------------------------------------------------------------------
+  {
+    id: "expert-dufour-createur",
+    category: "strategie",
+    title: "Maxime Dufour — Point de vue d'un createur",
+    content: `MAXIME DUFOUR — CREATEUR DE CONTENU (4,2M ABONNES)
+
+PROFIL:
+- 4,2M abonnes YouTube, 2,8M Instagram
+- A quitte un MCN apres litige en 2019
+- Co-fondateur Collectif des Createurs Independants
+
+SA REACTION:
+"C'est EXACTEMENT le genre de merde qui arrive quand tu signes avec des gens qui ne comprennent rien a notre metier. Pour eux, ta page c'est une ligne dans un Excel."
+
+LE NARRATIF QUI VA MARCHER:
+"Un createur francais a confie sa page de 1,2M d'abonnes a un fonds suisse. Ils ont transfere la page sans son accord. La page a ete hackee. Depuis 6 mois, du porno est publie dessus. Le fonds reclame 142K EUR."
+
+CE QUI VA FAIRE REAGIR:
+- "Ils ont transfere ma page sans mon accord" → Indignation
+- "Gmail perso sans 2FA" → Colere
+- "Du porno depuis 6 mois" → Choc
+- "Ils me reclament 142K EUR" → Rage
+- "Ils menacent de prendre le reste" → Solidarite
+
+LE CONSEIL CLE:
+"T'as une bonne main. Mais le plus dur, c'est pas de publier. C'est d'assumer apres. Une fois que t'as appuye sur 'publier', ta vie change pendant quelques semaines."
+
+TON A ADOPTER:
+"Je vous raconte ce qui m'est arrive. Je vous montre les preuves. Je vous laisse juger."`,
+    keywords: ["dufour", "createur", "communaute", "narratif", "viral", "solidarite"]
+  },
+
+  // ---------------------------------------------------------------------------
+  // ANALYSE DAVID HARTMANN (LITIGATION FUNDER)
+  // ---------------------------------------------------------------------------
+  {
+    id: "expert-hartmann-funder",
+    category: "strategie",
+    title: "David Hartmann — Analyse financement du litige",
+    content: `DAVID HARTMANN — LITIGATION FUNDER (THEMIS CAPITAL)
+
+PROFIL:
+- Managing Partner, 85+ litiges finances
+- Ancien avocat Freshfields (Londres)
+- Track record: 68% victoires/settlements
+
+VERDICT: PASS — Ne pas investir en l'etat
+Score: 52/100
+
+POURQUOI LE DOSSIER EST REJETE:
+1. Enjeu trop faible (1,4M EUR vs seuil 2M EUR)
+2. Ratio cout/enjeu defavorable (arbitrage 180-355K EUR)
+3. Prejudice insuffisamment documente
+
+MAIS SON CONSEIL EST CLAIR:
+"Ce n'est pas parce qu'un litigation funder refuse que tu dois abandonner. Ca signifie qu'il faut CHANGER DE STRATEGIE."
+
+STRATEGIE RECOMMANDEE (cout: 10-15K EUR):
+1. Deposer plainte penale (gratuit)
+2. Preparer communication publique (gratuit)
+3. Contacter d'autres createurs (gratuit)
+4. Forcer CC a negocier sous menace reputationnelle
+
+"Le vrai levier d'ADN n'est pas juridique — il est REPUTATIONNEL. CC ne peut pas se permettre un scandale public."
+
+SETTLEMENT RECOMMANDE:
+- Dette annulee + pages transferees + 50-100K EUR = ACCEPTER
+- Eviter l'arbitrage ICC (180-355K EUR de frais)`,
+    keywords: ["hartmann", "funder", "financement", "arbitrage", "cout", "settlement"]
+  },
+
+  // ---------------------------------------------------------------------------
+  // ANALYSE DR. VERDIER (PSYCHOLOGUE)
+  // ---------------------------------------------------------------------------
+  {
+    id: "expert-verdier-psychologue",
+    category: "strategie",
+    title: "Dr. Verdier — Profil psychologique de Jack Ojalvo",
+    content: `DR. NATHALIE VERDIER — PSYCHOLOGUE NEGOCIATION
+
+PROFIL:
+- Ancienne consultante DGSI
+- Specialiste personnalites narcissiques en conflit
+
+PROFIL DE JACK OJALVO:
+Personnalite narcissique a haut fonctionnement
+
+TRAITS IDENTIFIES:
+- Narcissisme eleve: "Ravi de recuperer vos actifs"
+- Besoin de controle: Refuse tout mecanisme qu'il ne controle pas
+- Aversion a la perte de face: Aucun aveu, aucune excuse
+- Pensee transactionnelle: Tout est rapport de force
+- Mepris pour les "petits": Ultimatums, ton condescendant
+
+CE QUI LUI FAIT MAL:
+- Utiliser ses propres mots contre lui
+- Remettre en question sa competence
+- Menacer sa reputation publique
+- Documenter ses contradictions
+
+CE QUI LE FERA CEDER:
+- Risque reputationnel (son business depend de la confiance)
+- Cout de l'obstination > cout de la concession
+- Pression de tiers (autres createurs, investisseurs)
+
+PREDICTION:
+- 55% contre-attaque agressive
+- 45% reponse dilatoire ou negociation tactique
+
+CONSEIL CLE:
+"Ojalvo ne comprend que les ACTES. Si tu exécutes tes menaces a J+16, c'est la que — et seulement la — qu'il commencera a te prendre au serieux."`,
+    keywords: ["verdier", "psychologie", "ojalvo", "narcissique", "ego", "prediction"]
+  },
+
+  // ---------------------------------------------------------------------------
+  // ANALYSE JULIEN CASTEX (CYBERSECURITE)
+  // ---------------------------------------------------------------------------
+  {
+    id: "expert-castex-cyber",
+    category: "strategie",
+    title: "Julien Castex — Analyse technique du piratage",
+    content: `JULIEN CASTEX — EXPERT CYBERSECURITE
+
+PROFIL:
+- Ancien responsable securite Dailymotion
+- Expert judiciaire agree Cour d'Appel Paris
+- Certifications: CISSP, CEH, OSCP
+
+CONCLUSION SUR LE 2FA:
+"75-85% de probabilite que le 2FA n'etait PAS actif sur le compte Mayorkas au moment du piratage."
+
+RAISONNEMENT:
+- Si le 2FA etait actif, Meta aurait recommande de le CHANGER, pas de l'ACTIVER
+- Le message de Meta etait SPECIFIQUE a Mayorkas, pas generique
+
+SUR LES GMAIL PERSONNELS:
+"L'utilisation d'adresses Gmail personnelles pour gerer des actifs valant plus d'un million d'euros constitue un ECART SIGNIFICATIF par rapport aux standards de l'industrie."
+
+VECTEUR D'ATTAQUE PROBABLE:
+1. Phishing cible (40-50% probabilite)
+2. Gmail personnel = cible facile
+3. Absence de 2FA = acces direct une fois credentials obtenus
+
+POURQUOI OYE ET PAS D'AUTRES:
+"Le fait qu'Oye soit la seule page piratee du portefeuille CC suggere une FAILLE SPECIFIQUE a la configuration de securite de cette page/ce compte."
+
+QUALIFICATION:
+"Negligence caracterisee, possiblement faute lourde."
+
+RECOMMANDATION:
+"Si ce dossier va en arbitrage, ADN devrait commander une expertise technique independante (8-15K EUR)."`,
+    keywords: ["castex", "cyber", "securite", "2fa", "gmail", "negligence", "expertise"]
+  },
+
+  // ---------------------------------------------------------------------------
+  // ANALYSE PR. MULLER (ARBITRE)
+  // ---------------------------------------------------------------------------
+  {
+    id: "expert-muller-arbitre",
+    category: "strategie",
+    title: "Pr. Muller — Chances en arbitrage ICC",
+    content: `PR. HEINRICH MULLER — ANCIEN ARBITRE ICC (47 AFFAIRES)
+
+COUTS ESTIMES ARBITRAGE ICC:
+- Frais ICC: 80-150K EUR
+- Avocats: 100-250K EUR par partie
+- Experts: 20-50K EUR
+- TOTAL: 150-400K EUR par partie
+
+PROBABILITES DES ISSUES:
+- Victoire substantielle ADN: 5-10%
+- Victoire partielle ADN: 20-25%
+- Settlement / Issue equilibree: 35-40%
+- Victoire partielle CC: 25-30%
+- Victoire substantielle CC: 15-20%
+
+MONTANT PROBABLE SI VICTOIRE ADN:
+- Prejudice reclame: 1,2M EUR
+- Montant probablement accorde: 370-650K EUR
+(Les arbitres sont conservateurs dans l'evaluation)
+
+SUR L'ART. 82 CO (EXCEPTION D'INEXECUTION):
+"Probabilite de succes: 45-55%. Un arbitre pourrait considerer que l'exception est DISPROPORTIONNEE."
+
+SUR LA FAUTE GRAVE (ART. 100 CO):
+"Probabilite: 35-45%. Le cumul Gmail + absence 2FA + 6 mois d'inaction pourrait caracteriser une faute grave."
+
+RECOMMANDATION:
+"Un arbitrage ICC est un PARI RISQUE pour ADN compte tenu du cout disproportionne. Utiliser cette lettre comme levier pour negocier un SETTLEMENT."`,
+    keywords: ["muller", "arbitre", "icc", "probabilites", "couts", "settlement"]
+  },
+
+  // ---------------------------------------------------------------------------
+  // ANALYSE SOPHIE MARCHAND (COMMUNICATION)
+  // ---------------------------------------------------------------------------
+  {
+    id: "expert-marchand-communication",
+    category: "strategie",
+    title: "Sophie Marchand — Strategie communication publique",
+    content: `SOPHIE MARCHAND — DIRECTRICE COMMUNICATION (EX-WEBEDIA)
+
+SCORE VIRALITE: 8/10
+
+INGREDIENTS PRESENTS:
+- David vs Goliath (createur vs fonds)
+- Injustice flagrante
+- Mechant identifiable
+- Victime sympathique
+- Rebondissements (piratage, porno, menaces)
+- Preuves concretes
+- Dimension internationale
+
+FORMAT RECOMMANDE — THREAD TWITTER:
+
+Tweet 1 (accroche):
+"En septembre 2024, j'ai confie ma page Facebook de 1,2M d'abonnes a un fonds suisse. 10 mois plus tard, elle a ete piratee. Depuis 6 mois, du porno est publie sous mon nom. Voici ce qui s'est passe."
+
+VISUELS A PREPARER:
+- Infographie timeline
+- Capture "CC est responsable de cette Page"
+- Capture contenu porno (floute)
+- Extrait email Meta
+
+RISQUES POUR CC SI COMMUNICATION PUBLIQUE:
+- Perte confiance createurs: 80%
+- Couverture presse negative: 60%
+- Departs clients existants: 50%
+- Difficulte nouveaux deals: 90%
+
+CONSEIL CLE:
+"Restez factuels, restez dignes, laissez les preuves parler. C'est BIEN PLUS devastateur pour un narcissique qu'une attaque emotionnelle."`,
+    keywords: ["marchand", "communication", "viralite", "twitter", "thread", "visuels"]
+  },
+
+  // ---------------------------------------------------------------------------
+  // ANALYSE MARC VEYRIER (NEGOCIATEUR)
+  // ---------------------------------------------------------------------------
+  {
+    id: "expert-veyrier-negociateur",
+    category: "strategie",
+    title: "Marc Veyrier — Analyse du rapport de force",
+    content: `MARC VEYRIER — NEGOCIATEUR (EX-RAID)
+
+VERDICT SUR LA LETTRE:
+"Une declaration de guerre polie. Note d'impact psychologique: 8/10"
+
+RAPPORT DE FORCE AVANT LA LETTRE: 30-70 en faveur de CC
+RAPPORT DE FORCE APRES: 50-50, voire 55-45 en faveur d'ADN
+
+"Vous avez renverse la table."
+
+CE QUE CC ENTEND:
+- "Double appropriation" → "On sait que vous avez depasse les bornes volontairement"
+- "Verite = fait justificatif absolu" → "Menacez-nous de diffamation, on s'en fout"
+- "Ultime mise en demeure" → "C'est votre derniere chance"
+
+SCENARIOS PROBABLES:
+- 40%: Contre-attaque agressive
+- 45%: Proposition de "negociation"
+- 15%: Silence total
+
+REGLES D'OR:
+1. SILENCE TOTAL jusqu'a J+15
+2. Ne JAMAIS negocier au telephone
+3. Exiger des ACTES avant de discuter
+4. Executer EXACTEMENT ce qu'on a annonce
+
+SI CC APPELLE:
+"Ne decroche pas. Tout doit etre ecrit. Un appel telephone, c'est leur terrain."
+
+CONSEIL FINAL:
+"La credibilite se construit par les ACTES, pas par les mots. Si vous dites '15 jours' et que vous relancez a J+20, vous perdez toute credibilite."`,
+    keywords: ["veyrier", "negociateur", "rapport", "force", "silence", "execution"]
+  }
+];
+
 export default syntheseExpertsChunks;
