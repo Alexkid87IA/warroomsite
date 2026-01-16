@@ -1,7 +1,7 @@
 import {
   Home, Scale, AlertTriangle, Mail, Swords, PinIcon, Brain,
   Users, FileText, BarChart3, Calendar, Phone, Repeat,
-  Shield, Send, ClipboardList, Gavel, Target, Sparkles,
+  Shield, Send, ClipboardList, Gavel, Target, Sparkles, Wrench,
   type LucideIcon
 } from 'lucide-react';
 
@@ -32,6 +32,7 @@ export const NAV_SECTIONS: NavSection[] = [
       { path: '/gmail', label: 'Gmail', icon: Mail, type: 'critical' },
       { path: '/war', label: 'Stratégie', icon: Swords, type: 'critical' },
       { path: '/encours', label: 'En Cours', icon: PinIcon, type: 'important' },
+      { path: '/tools', label: 'Outils', icon: Wrench, type: 'important' },
     ],
   },
   {

@@ -21,6 +21,7 @@ const EvidencePage = lazy(() => import('../pages/Evidence'));
 const LegalPage = lazy(() => import('../pages/Legal'));
 const AnalysisPage = lazy(() => import('../pages/Analysis'));
 const IntelligencePage = lazy(() => import('../pages/Intelligence'));
+const ToolsPage = lazy(() => import('../pages/Tools'));
 
 export const routes: RouteObject[] = [
   {
@@ -102,5 +103,9 @@ export const routes: RouteObject[] = [
   {
     path: '/intelligence',
     Component: IntelligencePage
+  },
+  {
+    path: '/tools',
+    Component: ToolsPage
   }
 ];

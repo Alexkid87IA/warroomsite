@@ -3,6 +3,11 @@ import { BrowserRouter, useRoutes } from 'react-router-dom';
 import MainLayout from './shared/layouts/MainLayout';
 import { routes } from './routes';
 import ProtectedRoute from './components/ProtectedRoute';
+import { CommandPalette } from './components/CommandPalette';
+import { DeadlineAlerts } from './components/DeadlineAlerts';
+import { FinancialCalculator } from './components/FinancialCalculator';
+import { DecisionMatrix } from './components/DecisionMatrix';
+import { useKeyboardShortcuts } from './hooks/useKeyboardShortcuts';
 
 function AppRoutes() {
   const element = useRoutes(routes);
@@ -17,13 +22,29 @@ function AppRoutes() {
   );
 }
 
+function AppContent() {
+  // Initialize keyboard shortcuts
+  useKeyboardShortcuts();
+
+  return (
+    <>
+      <MainLayout>
+        <AppRoutes />
+      </MainLayout>
+      {/* Global components */}
+      <CommandPalette />
+      <DeadlineAlerts />
+      <FinancialCalculator />
+      <DecisionMatrix />
+    </>
+  );
+}
+
 function App() {
   return (
     <BrowserRouter>
       <ProtectedRoute>
-        <MainLayout>
-          <AppRoutes />
-        </MainLayout>
+        <AppContent />
       </ProtectedRoute>
     </BrowserRouter>
   );
