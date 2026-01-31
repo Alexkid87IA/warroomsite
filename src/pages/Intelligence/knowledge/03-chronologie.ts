@@ -77,9 +77,9 @@ OCTOBRE 2024:
     title: "Juillet 2025 — Piratage détecté",
     content: `CHRONOLOGIE JUILLET 2025 — PIRATAGE
 
-~25-31 JUILLET 2025:
-• Le piratage de la page Oye est détecté
-• Date exacte inconnue mais avant le 4 août
+27 JUILLET 2025:
+• Le piratage de la page Oye est découvert
+• Découvert le 27 juillet 2025
 • FIABILITÉ: ✅ PROUVÉ (emails)
 
 CONTEXTE:
@@ -350,6 +350,60 @@ STRATÉGIE ADN — PHASE SILENCE:
   3. Procédures arbitrales et judiciaires
 • FIABILITÉ: ✅ PROUVÉ (lettre envoyée)`,
     keywords: ["janvier", "2026", "martin", "febvre", "facture", "lettre", "offensive", "contre-créance", "délais"]
+  },
+  {
+    id: "chrono-2026-fevrier",
+    category: "chronologie",
+    title: "Février 2026 — Exécution multi-front",
+    content: `CHRONOLOGIE FÉVRIER 2026
+
+26 JANVIER 2026 — LETTRE NUCLÉAIRE CC:
+• Auteur: Emre Kumet (Legal Director — changement de titre)
+• CC exerce formellement le Breach Call Option (Clause 7)
+• Prétend acquérir TOUTE la PI d'ADN pour 1 USD
+• Réclame 630 000 EUR de pénalités (Clause 6, 3× Specified Amount)
+• Insinue qu'ADN est responsable du piratage
+• Exige renonciation aux droits moraux (impossible en droit français)
+• FIABILITÉ: ✅ PROUVÉ
+
+30 JANVIER 2026 — LETTRE ADN (LRAR):
+• Envoi recommandé international n° RK 46 507 575 0 FR
+• Versions française et anglaise
+• Contestation BCO (Art. 2 CC)
+• Renforcement Art. 82, 97, 100 CO
+• Art. 163 al. 3 CO (réduction pénalités)
+• Annonce plainte pénale et communication publique
+• FIABILITÉ: ✅ PROUVÉ
+
+~31 JANVIER 2026 — PREMIER DÉLAI EXPIRÉ:
+• Délai de 15 jours (fixé le 16 janvier) expiré
+• CC n'a fourni AUCUN document
+• CC n'a transféré AUCUN actif
+• CC EN DÉFAUT TOTAL
+• FIABILITÉ: ✅ PROUVÉ
+
+2 FÉVRIER 2026 — PLAINTE PÉNALE:
+• Tribunal Judiciaire de Marseille
+• Art. 323-1 CP (accès frauduleux STAD)
+• Art. 323-3 CP (modification frauduleuse données)
+• Art. 314-1 CP (abus de confiance)
+• 14 pièces jointes
+• FIABILITÉ: ✅ FAIT
+
+2 FÉVRIER 2026 — SIGNALEMENT DDPP:
+• DDPP Bouches-du-Rhône
+• Art. L442-1 Code de commerce
+• Pratiques commerciales abusives B2B
+• Signale d'autres créateurs potentiellement touchés
+• FIABILITÉ: ✅ FAIT
+
+2 FÉVRIER 2026 — DÉCOUVERTE FINMA:
+• CC non enregistré dans les registres FINMA
+• CC gère des fonds créateurs (Crunchbase: "upfront capital funding to creators")
+• Violation potentielle LEFin (loi établissements financiers)
+• Signalement FINMA à préparer
+• FIABILITÉ: ✅ PROUVÉ`,
+    keywords: ["février", "2026", "plainte", "pénale", "ddpp", "finma", "bco", "nucléaire", "630000"]
   },
 
   // ─────────────────────────────────────────────────────────────────────────────

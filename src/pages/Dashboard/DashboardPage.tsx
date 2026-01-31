@@ -13,15 +13,15 @@ const DashboardPage = () => {
       <AlertHeader variant="amber" icon="⚔️">
         <div className="text-amber-300 font-semibold text-lg">SITUATION ACTUELLE — {lastUpdate}</div>
         <div className="text-slate-300 mt-2">
-          Lettre offensive envoyée le 16 janvier 2026. Mise en demeure formelle avec délais :
-          15 jours pour documents et transfert des actifs, 30 jours pour position sur réparation du préjudice.
-          Contre-créance ADN notifiée : plus de {formatCurrencyShort(financial.counterClaimMin)}.
+          Plainte pénale DÉPOSÉE (2 février). Signalement DDPP envoyé. CC non enregistré FINMA. Lettre nucléaire CC du 26/01 : BCO pour 1$, 630K€ de pénalités. Avocat suisse et signalement FINMA en priorité cette semaine.
         </div>
         <div className="mt-3 flex flex-wrap gap-2">
-          <Badge type="invoked">Lettre envoyée 16/01</Badge>
-          <Badge type="pending">Délai 15j : ~31 janvier</Badge>
-          <Badge type="pending">Délai 30j : ~15 février</Badge>
-          <Badge type="critical">Contre-créance notifiée</Badge>
+          <Badge type="done">Lettre 16/01</Badge>
+          <Badge type="done">Lettre 30/01 (LRAR)</Badge>
+          <Badge type="done">Plainte pénale 2/02</Badge>
+          <Badge type="done">Signalement DDPP</Badge>
+          <Badge type="critical">FINMA : CC non enregistré</Badge>
+          <Badge type="critical">Avocat suisse : cette semaine</Badge>
         </div>
       </AlertHeader>
 
@@ -53,10 +53,16 @@ const DashboardPage = () => {
       <Card title="📅 Prochaines étapes" accent="blue">
         <div className="space-y-3">
           {[
-            { date: "16 JAN", action: "Lettre offensive envoyée", instruction: "Mise en demeure avec délais 15j/30j", status: "done" },
-            { date: "~31 JAN", action: "Délai 15 jours expire", instruction: "Documents + Transfert Buzzly/VoyagerLoin", status: "now" },
+            { date: "16 JAN", action: "Lettre offensive envoyée", instruction: "Mise en demeure avec délais 15j/30j + contre-créance +1,2M€", status: "done" },
+            { date: "26 JAN", action: "Lettre nucléaire CC", instruction: "BCO pour 1$ + 630K€ pénalités + insinuation piratage ADN", status: "done" },
+            { date: "30 JAN", action: "Réponse ADN (LRAR)", instruction: "Renforcement Art. 82, 97, 100 CO + Art. 2 CC + Art. 163 al. 3 CO", status: "done" },
+            { date: "~31 JAN", action: "Délai 15j EXPIRÉ", instruction: "CC EN DÉFAUT — Aucun document, aucun transfert", status: "done" },
+            { date: "2 FÉV", action: "Plainte pénale déposée", instruction: "Art. 323-1 + 323-3 + 314-1 CP — Tribunal Marseille", status: "done" },
+            { date: "2 FÉV", action: "Signalement DDPP", instruction: "Art. L442-1 C.com — Pratiques abusives B2B", status: "done" },
+            { date: "3-7 FÉV", action: "FINMA + Avocat suisse", instruction: "CC non enregistré FINMA + mandater avocat Genève", status: "now" },
+            { date: "~9 FÉV", action: "Article Origines Media", instruction: "Communication publique (APRÈS avocat mandaté)", status: "upcoming" },
             { date: "~15 FÉV", action: "Délai 30 jours expire", instruction: "Position formelle sur réparation préjudice", status: "upcoming" },
-            { date: "APRÈS", action: "Si silence ou refus CC", instruction: "Communication publique + Plainte pénale + Arbitrage", status: "upcoming" }
+            { date: "MARS+", action: "Arbitrage ICC si nécessaire", instruction: "Contre-créance +1,2M€ — Espérance CC = -360K€", status: "upcoming" }
           ].map((item, i) => (
             <div key={i} className={`flex items-center gap-4 p-3 rounded-lg ${
               item.status === 'now' ? 'bg-cyan-500/10 border border-cyan-500/30' :

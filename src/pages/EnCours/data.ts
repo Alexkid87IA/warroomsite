@@ -1,71 +1,138 @@
 export const prochainActionData = {
-  action: "ATTENDRE — Observer la réaction de CC",
-  date: "31 janvier 2026",
-  pourquoi: "La lettre offensive du 16 janvier a été envoyée. Le délai de 15 jours pour documents et transfert expire le ~31 janvier. On observe.",
-  exception: "Si CC propose une négociation sérieuse → évaluer. Tout par écrit."
+  action: "SIGNALEMENT FINMA + TROUVER AVOCAT SUISSE",
+  date: "3-7 février 2026",
+  pourquoi: "Plainte pénale déposée. Signalement DDPP envoyé. CC non enregistré FINMA — levier énorme. Maintenant : mandater un avocat suisse + signaler à la FINMA. Plus de lettres à CC.",
+  exception: "Si CC envoie une proposition écrite sérieuse avant lundi → évaluer, mais déposer la plainte quand même. Les deux sont compatibles."
 };
 
 export const ouEnEstOnData = {
-  resume: "LETTRE OFFENSIVE ENVOYÉE LE 16 JANVIER 2026. Mise en demeure formelle avec contre-créance notifiée (+1,2M€). Délais fixés : 15 jours pour documents/transfert, 30 jours pour position sur réparation. CC doit maintenant répondre ou subir les conséquences annoncées.",
+  resume: "PLAINTE PÉNALE DÉPOSÉE (2 février). SIGNALEMENT DDPP ENVOYÉ. CC non enregistré FINMA. Lettre nucléaire CC du 26 janvier : BCO pour 1$, pénalités 630K€, insinuation ADN responsable du piratage. Réponse ADN du 30 janvier (LRAR). Premier délai 15j expiré. CC en défaut total.",
   notreAction: {
-    quoi: "Lettre offensive du 16 janvier 2026",
-    contenu: "Mise en demeure complète : constat des manquements, transfert 28 sept 2024 illégal, négligence (2FA, Gmail perso), contre-créance +1,2M€, délais 15j/30j, conséquences annoncées (communication publique, plainte pénale, arbitrage)"
+    quoi: "Plainte pénale + Signalement DDPP (2 février 2026)",
+    contenu: "Plainte : Art. 323-1 (accès frauduleux), Art. 323-3 (modification données), Art. 314-1 CP (abus de confiance). Signalement DDPP : Art. L442-1 Code commerce (déséquilibre significatif B2B). Découverte FINMA : CC non enregistré malgré activité de gestion de fonds créateurs."
   },
   leurAction: {
-    quoi: "Email Martin Febvre du 12 janvier 2026",
-    contenu: "CC IGNORE notre lettre du 19/12 et l'Art. 82 CO. Demande paiement de 6 000€ (minimum garanti) + relevés bancaires. Continue comme si de rien n'était."
+    quoi: "LETTRE NUCLÉAIRE du 26 janvier 2026",
+    contenu: "CC exerce le BCO (Clause 7) — prétend acquérir TOUTE la PI d'ADN pour 1 USD. Réclame 630K€ de pénalités (Clause 6). Insinue qu'ADN est responsable du piratage. Exige renonciation aux droits moraux (impossible en droit FR). Emre Kumet change de titre : 'Legal Director' (était 'Head of Legal'). Aucun document fourni. Aucun transfert effectué."
   },
   delais: [
     {
-      titre: "Délai 15 jours (~31 jan)",
-      statut: "Documents + Transfert Buzzly/VoyagerLoin",
-      type: "amber" as const
+      titre: "Plainte pénale DÉPOSÉE (2 fév)",
+      statut: "✅ Art. 323-1 + 323-3 + 314-1 CP — Tribunal Marseille",
+      type: "green" as const
+    },
+    {
+      titre: "Signalement DDPP ENVOYÉ (2 fév)",
+      statut: "✅ Art. L442-1 C.com — Pratiques abusives B2B",
+      type: "green" as const
+    },
+    {
+      titre: "FINMA — CC non enregistré",
+      statut: "Signalement à préparer — CC opère sans licence LEFin",
+      type: "red" as const
+    },
+    {
+      titre: "Délai 15 jours EXPIRÉ (~31 jan)",
+      statut: "CC EN DÉFAUT — Aucun document, aucun transfert",
+      type: "red" as const
     },
     {
       titre: "Délai 30 jours (~15 fév)",
       statut: "Position formelle sur réparation préjudice",
-      type: "blue" as const
+      type: "amber" as const
     },
     {
-      titre: "Si silence ou refus CC",
-      statut: "Communication publique + Plainte pénale + Arbitrage",
+      titre: "Avocat suisse",
+      statut: "À TROUVER — Indispensable pour crédibilité (arbitrage ICC Genève)",
       type: "red" as const
     }
   ]
 };
 
 export const strategieData = {
-  nom: "EXÉCUTION — Faire ce qu'on a annoncé",
-  periode: "16 janvier → 15 février 2026",
+  nom: "MULTI-FRONT — Noyer CC sous les procédures",
+  periode: "2 février → 15 février 2026",
   pourquoiSilence: [
-    "La lettre du 16 janvier est notre position officielle — elle n'a pas besoin de renforts",
-    "CC sait maintenant exactement ce qu'on attend et les conséquences",
-    "Le silence montre qu'on est sérieux — pas besoin de relancer",
-    "Chaque jour qui passe sans réponse de CC = preuve supplémentaire de leur mauvaise foi",
-    "Si CC veut négocier, c'est à EUX de venir vers nous maintenant"
+    "⚠️ LE SILENCE A ASSEZ DURÉ — 2 lettres envoyées sans réponse, les mots sont épuisés",
+    "La crédibilité se mesure au ratio actes/paroles — actuellement trop de paroles",
+    "CC interprète chaque jour sans action concrète comme de l'hésitation",
+    "La plainte pénale annoncée le 16 janvier doit être déposée MAINTENANT",
+    "Un avocat suisse doit être contacté cette semaine — pas le mois prochain"
   ],
-  message: "On a dit ce qu'on allait faire. Maintenant on le fait. Pas de bluff.",
+  message: "Les mots sont terminés. Chaque front ouvert multiplie la pression. Plainte pénale + DGCCRF + FINMA + avocat suisse = CC ne sait plus où donner de la tête.",
   risques: [
     {
-      risque: "CC ne répond pas du tout",
-      probabilite: "40%",
-      reponse: "Parfait. On exécute exactement ce qu'on a annoncé : communication publique, plainte pénale, arbitrage."
+      risque: "CC continue le silence total",
+      probabilite: "35%",
+      reponse: "On exécute : plainte pénale (lundi), avocat suisse (cette semaine), article Origines Media (semaine du 9 fév)."
     },
     {
-      risque: "CC contre-attaque agressivement",
-      probabilite: "45%",
-      reponse: "Attendu. On reste calme, on documente, on maintient nos positions."
+      risque: "CC contre-attaque (mise en demeure, arbitrage)",
+      probabilite: "30%",
+      reponse: "Attendu. Contre-créance +1,2M€ déjà notifiée. Art. 82 CO invoqué. Avocat suisse indispensable pour répondre."
     },
     {
       risque: "CC propose une négociation",
-      probabilite: "15%",
-      reponse: "Écouter MAIS tout par écrit. Conditions minimales non négociables."
+      probabilite: "25%",
+      reponse: "Écouter. Exiger transfert Buzzly/VoyagerLoin comme preuve de bonne foi. Tout par écrit. Conditions minimales non négociables."
+    },
+    {
+      risque: "CC capitule (accepte conditions)",
+      probabilite: "10%",
+      reponse: "Accord écrit immédiat. Vérifier exécution. Quitus mutuel APRÈS réception des fonds et actifs."
     }
   ],
   changementSi: [
     "CC fait une proposition sérieuse (par écrit) avec engagement sur nos conditions minimales",
-    "Nouveau développement majeur qui change la donne",
-    "Conseil juridique spécifique recommandant une autre approche"
+    "L'avocat suisse recommande une approche différente",
+    "La plainte pénale ouvre des opportunités nouvelles"
+  ]
+};
+
+export const analyseProba = {
+  titre: "ANALYSE PROBABILISTE — Chances de victoire avant arbitrage",
+  pCC_lache: {
+    lettre_seule: 18,
+    lettre_plainte: 30,
+    lettre_plainte_avocat: 37,
+    tous_vecteurs: 55
+  },
+  facteursDominants: [
+    "Le dossier est solide juridiquement — mais CC ne raisonne pas rationnellement",
+    "Biais cognitifs de CC : sunk cost (150K€ investis), ego (Jack/Emre), overconfidence (contrat 'blindé'), peur du précédent",
+    "L'espérance mathématique de l'arbitrage est NÉGATIVE pour CC (~-360K€) — mais les biais réduisent de ~88% la probabilité qu'ils prennent la décision rationnelle",
+    "Variable incontrôlable la plus impactante : la santé financière de CC",
+    "FINMA = arme nucléaire — CC gère des fonds créateurs sans licence"
+  ],
+  esperanceArbitrageCC: -361000,
+  probabiliteVictoireTotaleCC: 1.7,
+  diagnostic: "Le dossier est fort. L'exécution est lente. Trop de paroles, pas assez d'actes."
+};
+
+export const autoEvaluation = {
+  titre: "AUTO-ÉVALUATION — La partie d'échecs est-elle bien menée ?",
+  bienJoue: [
+    "Documentation exhaustive — tout est gardé, chronologé, prouvé",
+    "Lettre du 30 janvier juridiquement solide (Art. 82, 97, 100 CO + Art. 2 CC)",
+    "Identification de la page piratée le 3 septembre (CC incapable de la localiser)",
+    "Proposition de séquestre (14/11) → montre notre bonne foi, leur mauvaise foi",
+    "Proposition de remboursement 150K€ (oct 2024) → même logique",
+    "Contre-créance notifiée (+1,2M€) → CC sait que les enjeux sont énormes",
+    "✅ Plainte pénale déposée le 2 février — crédibilité restaurée",
+    "Signalement DDPP envoyé — ouvre un front administratif",
+    "Découverte FINMA — CC non enregistré, levier majeur"
+  ],
+  malJoue: [
+    "⚠️ TIMING TROP LENT — 6 mois depuis le piratage, plainte toujours pas déposée",
+    "⚠️ PAS D'AVOCAT SUISSE — lettres envoyées depuis la France sur du droit suisse avec arbitrage ICC Genève. CC voit le bluff potentiel.",
+    "⚠️ RATIO PAROLES/ACTES DÉSÉQUILIBRÉ — 2 lettres, un article prévu, des menaces. Mais : 0 procédure lancée, 0 avocat suisse, 0 plainte déposée.",
+    "⚠️ ARTICLE AVANT PLAINTE = RISQUE — publier avant d'avoir déposé la plainte et mandaté un avocat peut être retourné contre nous"
+  ],
+  actionsUrgentes: [
+    { action: "Signaler CC à la FINMA", delai: "Cette semaine (3-7 février)", priorite: "CRITIQUE" },
+    { action: "Contacter un avocat suisse", delai: "Cette semaine (3-7 février)", priorite: "CRITIQUE" },
+    { action: "Contacter d'autres créateurs CC", delai: "Semaine du 9 février", priorite: "IMPORTANT" },
+    { action: "Article Origines Media", delai: "Semaine du 9 février (APRÈS avocat)", priorite: "MOYEN" }
   ]
 };
 
@@ -73,96 +140,133 @@ export const phases = [
   {
     numero: 1,
     nom: "PÉRIODE D'OBSERVATION",
-    periode: "16 jan → 31 jan 2026",
-    statut: "EN COURS" as const,
+    periode: "16 jan → 30 jan 2026",
+    statut: "TERMINÉ" as const,
     couleur: "cyan" as const,
-    quoi: "Observer la réaction de CC à notre lettre offensive. Ne pas relancer.",
+    quoi: "Observer la réaction de CC à notre lettre offensive.",
     pourquoi: [
-      "La lettre du 16 janvier est complète — elle n'a pas besoin de renforts",
-      "CC a reçu un ultimatum clair avec délais et conséquences",
-      "Le silence de notre part = confiance et détermination",
-      "On leur laisse le temps de réaliser la gravité de la situation"
+      "La lettre du 16 janvier était notre position officielle",
+      "CC avait un délai de 15 jours pour documents et transfert",
+      "On leur laissait le temps de réaliser la gravité"
     ],
     comment: [
-      "NE PAS relancer CC",
-      "NE PAS répondre aux provocations éventuelles",
-      "Documenter tout ce qui se passe",
-      "Préparer les actions suivantes (communication, plainte)"
+      "✅ Observation faite — CC n'a PAS répondu",
+      "✅ Aucun document fourni",
+      "✅ Aucun transfert effectué",
+      "✅ Deuxième lettre envoyée le 30 janvier (renforcement juridique)"
     ],
-    exception: {
-      si: "CC propose une négociation sérieuse par écrit",
-      alors: "Évaluer. Exiger d'abord le transfert de Buzzly/VoyagerLoin comme preuve de bonne foi."
-    }
+    resultat: "CC EN DÉFAUT — Silence total, délai 15j expiré sans aucune action de leur part."
   },
   {
     numero: 2,
-    nom: "PREMIER DÉLAI — DOCUMENTS",
-    periode: "~31 janvier 2026",
-    statut: "PLANIFIÉ" as const,
-    couleur: "purple" as const,
-    quoi: "Constater si CC a fourni les documents et transféré les actifs.",
+    nom: "CONSTAT DE DÉFAUT + LETTRE RENFORCEMENT",
+    periode: "30 janvier 2026",
+    statut: "FAIT" as const,
+    couleur: "cyan" as const,
+    quoi: "Deuxième lettre envoyée — renforcement juridique complet.",
     pourquoi: [
-      "Délai de 15 jours fixé dans la lettre du 16 janvier",
-      "CC devait fournir : rapport récupération Oye, logs 2FA, échanges Meta",
-      "CC devait transférer : Buzzly et VoyagerLoin",
-      "L'absence de réponse = refus tacite = on passe à l'exécution"
+      "CC n'a pas répondu au premier délai de 15 jours",
+      "Nécessité de renforcer la base juridique (Art. 97, 100 CO, Art. 2 CC)",
+      "Annoncer les actions imminentes : plainte pénale, communication publique"
     ],
     comment: [
-      "Vérifier si documents reçus",
-      "Vérifier si transfert effectué dans Business Manager",
-      "Si rien : constater le défaut par écrit",
-      "Préparer la communication publique"
+      "✅ Lettre envoyée en FR et EN",
+      "✅ Art. 82 CO réitéré (exception d'inexécution)",
+      "✅ Art. 97 CO détaillé (responsabilité pour négligence)",
+      "✅ Art. 100 CO invoqué (nullité clause exonératoire)",
+      "✅ Art. 2 CC invoqué (abus de droit sur BCO)",
+      "✅ Table récapitulative du préjudice incluse",
+      "✅ Clause 10 confidentialité vérifiée pour article"
     ],
-    contenu: [
-      "Email de constat si pas de réponse : 'Nous constatons l'absence de réponse à notre délai du 31 janvier.'",
-      "Rappel des conséquences annoncées",
-      "Annonce de la mise en œuvre imminente"
-    ]
+    resultat: "Position juridique complète et solide. CC ne peut plus ignorer."
   },
   {
     numero: 3,
-    nom: "EXÉCUTION — COMMUNICATION PUBLIQUE",
-    periode: "Début février 2026",
-    statut: "EN RÉSERVE" as const,
-    couleur: "red" as const,
-    quoi: "Communication publique sur l'affaire (obligation morale envers 1,2M d'abonnés).",
-    pourquoi: [
-      "Annoncé dans la lettre du 16 janvier — on fait ce qu'on a dit",
-      "1,2 million de personnes méritent de savoir ce qui est arrivé à Oye",
-      "Pression publique maximale sur CC",
-      "Crédibilité : si on ne le fait pas, on perd tout pouvoir de négociation futur"
-    ],
-    comment: [
-      "Post sur les réseaux restants (Instagram, YouTube si applicable)",
-      "Ton factuel : expliquer ce qui s'est passé sans diffamation",
-      "Documenter les faits : piratage, inaction de CC, contre-créance",
-      "Inviter la communauté à comprendre pourquoi Oye a disparu"
-    ],
-    condition: "À déclencher si CC n'a pas répondu sérieusement au délai du 31 janvier"
-  },
-  {
-    numero: 4,
     nom: "EXÉCUTION — PLAINTE PÉNALE",
-    periode: "Février 2026",
-    statut: "EN RÉSERVE" as const,
-    couleur: "red" as const,
-    quoi: "Dépôt de plainte pénale en France pour accès frauduleux (Art. 323-1 CP) et abus de confiance (Art. 314-1 CP).",
+    periode: "Lundi 2 février 2026",
+    statut: "FAIT" as const,
+    couleur: "cyan" as const,
+    quoi: "Dépôt de plainte pénale. PRIORITÉ ABSOLUE.",
     pourquoi: [
-      "Annoncé dans la lettre du 16 janvier — on fait ce qu'on a dit",
-      "Coût : 0€ pour nous — procédure gratuite",
+      "Annoncé dans les deux lettres — ne pas le faire = perte totale de crédibilité",
+      "Coût : 0€ — procédure gratuite",
       "Dimension pénale = pression maximale sur CC",
-      "Permet une enquête officielle sur les circonstances du piratage"
+      "Permet une enquête officielle sur les circonstances du piratage",
+      "Chaque jour de retard est un signal de faiblesse"
     ],
     comment: [
       "Plainte au commissariat ou directement au procureur",
-      "Fournir tous les éléments : emails, chronologie, preuves 2FA",
       "Art. 323-1 CP : accès frauduleux au système",
-      "Art. 314-1 CP : abus de confiance (transfert du 28 sept sans accord)"
+      "Art. 314-1 CP : abus de confiance (transfert 28 sept sans accord)",
+      "Fournir : emails, chronologie, preuves 2FA, captures d'écran page piratée"
     ],
-    condition: "À déclencher en parallèle ou après la communication publique"
+    resultat: "Plainte déposée le 2 février. Art. 323-1, 323-3, 314-1 CP. 14 pièces jointes.",
+    condition: "⚠️ NE PAS REPORTER — C'est la priorité n°1"
+  },
+  {
+    numero: 3.5,
+    nom: "SIGNALEMENTS ADMINISTRATIFS",
+    periode: "2-7 février 2026",
+    statut: "EN COURS" as const,
+    couleur: "red" as const,
+    quoi: "Ouvrir tous les fronts : DDPP, FINMA, contacts créateurs.",
+    pourquoi: [
+      "DDPP envoyé — Art. L442-1 C.com (clauses abusives B2B)",
+      "FINMA : CC non enregistré alors qu'ils gèrent des fonds créateurs (violation LEFin)",
+      "D'autres créateurs sont probablement liés à CC avec des contrats similaires",
+      "Chaque front ouvert multiplie la pression et le coût pour CC"
+    ],
+    comment: [
+      "✅ Signalement DDPP Bouches-du-Rhône envoyé",
+      "Préparer signalement FINMA (formulaire contact)",
+      "Identifier d'autres créateurs dans le portefeuille CC",
+      "Documenter le profil Crunchbase/PitchBook de CC"
+    ]
+  },
+  {
+    numero: 4,
+    nom: "AVOCAT SUISSE",
+    periode: "3-7 février 2026",
+    statut: "EN COURS" as const,
+    couleur: "red" as const,
+    quoi: "Trouver et mandater un avocat suisse spécialisé en droit des contrats / arbitrage ICC.",
+    pourquoi: [
+      "Contrat régi par le droit suisse — lettres depuis la France manquent de crédibilité",
+      "Arbitrage ICC prévu à Genève — impossible sans représentation suisse",
+      "Un nom sur du papier à en-tête suisse change la dynamique immédiatement",
+      "CC sait que sans avocat suisse, nos menaces d'arbitrage sont théoriques"
+    ],
+    comment: [
+      "Chercher un avocat à Genève spécialisé litiges commerciaux",
+      "Consultation initiale pour évaluer le dossier",
+      "Budget à prévoir : consultation ~500-1500 CHF",
+      "Même une lettre d'avocat suisse suffit à changer l'équation"
+    ],
+    condition: "INDISPENSABLE avant toute escalade vers l'arbitrage"
   },
   {
     numero: 5,
+    nom: "COMMUNICATION PUBLIQUE — ORIGINES MEDIA",
+    periode: "Semaine du 9 février 2026",
+    statut: "EN RÉSERVE" as const,
+    couleur: "purple" as const,
+    quoi: "Article éditorial sur Origines Media (respectant Clause 10 confidentialité).",
+    pourquoi: [
+      "Annoncé dans les deux lettres — obligation morale envers 1,2M d'abonnés",
+      "Clause 10 vérifiée : on peut décrire les faits, pas citer le contrat verbatim",
+      "Pression réputationnelle sur CC (+5-10% de chances qu'ils lâchent)",
+      "Crédibilité : si on ne le fait pas, on perd tout pouvoir de négociation futur"
+    ],
+    comment: [
+      "Article rédigé — ton factuel, journalistique, pas de diffamation",
+      "Décrire les mécanismes contractuels en termes généraux (pas de citation verbatim)",
+      "Nommer Copyright Capital SA (faits publics)",
+      "PUBLIER APRÈS la plainte pénale et le mandat d'avocat suisse"
+    ],
+    condition: "⚠️ APRÈS plainte pénale déposée ET avocat suisse contacté. Pas avant."
+  },
+  {
+    numero: 6,
     nom: "SECOND DÉLAI — RÉPARATION",
     periode: "~15 février 2026",
     statut: "PLANIFIÉ" as const,
@@ -177,45 +281,48 @@ export const phases = [
       "Vérifier si CC a pris position par écrit",
       "Si proposition insuffisante : refuser et maintenir nos demandes",
       "Si rien : constater et préparer la procédure arbitrale",
-      "Contacter un avocat suisse pour lancer l'arbitrage"
-    ],
-    contenu: [
-      "Évaluation de toute proposition de CC",
-      "Comparaison avec nos conditions minimales",
-      "Décision : accepter, contre-proposer, ou arbitrage"
+      "L'avocat suisse doit être opérationnel à cette date"
     ]
   },
   {
-    numero: 6,
-    nom: "ARBITRAGE",
+    numero: 7,
+    nom: "ARBITRAGE ICC",
     periode: "Mars 2026+",
     statut: "OBJECTIF" as const,
     couleur: "emerald" as const,
-    quoi: "Si nécessaire : procédure arbitrale en Suisse selon les clauses du contrat.",
+    quoi: "Si nécessaire : procédure arbitrale en Suisse (Clause 14 du contrat).",
     pourquoi: [
       "Dernier recours si CC refuse toute négociation raisonnable",
-      "Notre contre-créance (+1,2M€) dépasse largement leur créance (142k€)",
-      "Arbitrage coûterait 150-300k€ à CC — ils n'ont pas intérêt",
-      "Notre dossier est solide : Art. 82 CO, négligence, transfert illégal"
+      "Notre contre-créance (+1,2M€) >> leur créance (142k€)",
+      "Espérance mathématique NÉGATIVE pour CC : environ -360K€",
+      "Probabilité victoire totale CC : 1,7% seulement",
+      "Clause 14.8 : loser pays — risque financier énorme pour CC"
     ],
     comment: [
-      "Engager un avocat suisse spécialisé",
-      "Préparer le dossier complet",
-      "Invoquer l'exception d'inexécution (Art. 82 CO)",
+      "Avocat suisse spécialisé OBLIGATOIRE",
+      "Préparer le dossier complet avec toutes les preuves",
+      "Invoquer Art. 82 CO (exception d'inexécution)",
+      "Invoquer Art. 97 CO (responsabilité pour négligence)",
+      "Invoquer Art. 100 CO (nullité clause exonératoire)",
+      "Invoquer Art. 2 CC (abus de droit sur BCO)",
       "Demander compensation intégrale + dommages"
     ],
     conditionsMin: [
       "Annulation complète de la dette restante (~142k€)",
       "Compensation pour préjudice Oye (800k€ - 1,3M€)",
-      "Transfert de tous les actifs restants",
+      "Transfert de tous les actifs restants (Buzzly, VoyagerLoin)",
       "Quitus mutuel"
     ],
     leviers: [
-      "Email 25 sept 2024 : CC ne demandait que 'super admin' pour paiements",
+      "Email Meta 27/08 : recommandation 2FA → preuve que 2FA n'était pas actif",
+      "Gmail perso (jmayorkas2@gmail.com) pour actif >1M€ → négligence organisationnelle",
+      "Page piratée existe encore (ID 100089751341306) → contredit 'no evidence'",
+      "Meta affiche CC comme 'responsable' de la page (capture Buzzly 29/12)",
+      "5+ mois d'inaction documentée",
       "Transfert illégal du 28 sept 2024 : dépassement du mandat",
-      "5+ mois d'inaction documentée sur récupération Oye",
-      "Contradiction 2FA : Meta recommande d'activer ce que CC dit 'toujours actif'",
-      "Double Gmail perso : négligence organisationnelle",
+      "Séquestre refusé (14/11) → mauvaise foi",
+      "Remboursement 150K€ refusé (oct 2024) → CC voulait garder le contrôle",
+      "RDV technique annulé (23/12) → mauvaise foi",
       "Synthèse des 9 experts : verdict unanime contre CC"
     ]
   }
@@ -224,42 +331,96 @@ export const phases = [
 export const arbreDecision = [
   {
     emoji: "🔇",
-    si: "Silence total de CC jusqu'au 31 janvier",
-    alors: "Email de constat du défaut → Communication publique → Plainte pénale"
+    si: "CC maintient le silence après le 15 février",
+    alors: "Plainte pénale déjà déposée. Avocat suisse lance la procédure arbitrale. Article Origines Media publié. Maximum de pression."
   },
   {
     emoji: "📧",
-    si: "CC répond de manière agressive / rejette tout",
-    alors: "Pas de réponse. On exécute comme prévu. Leur agressivité renforce notre position."
+    si: "CC répond agressivement / menace l'arbitrage",
+    alors: "Parfait. Notre dossier est plus fort que le leur. Contre-créance +1,2M€ vs 142K€. Espérance arbitrage = -360K€ pour CC. Laisser l'avocat suisse répondre."
   },
   {
     emoji: "💰",
-    si: "CC propose de négocier (même partiellement)",
-    alors: "Écouter MAIS exiger d'abord le transfert de Buzzly/VoyagerLoin comme preuve de bonne foi. Tout par écrit."
+    si: "CC propose de négocier",
+    alors: "Écouter. Exiger le transfert immédiat de Buzzly/VoyagerLoin comme preuve de bonne foi. Conditions minimales non négociables. Tout par écrit."
   },
   {
     emoji: "📄",
-    si: "CC fournit les documents demandés",
-    alors: "Analyser. Vérifier la cohérence. Maintenir la demande de réparation pour le préjudice."
+    si: "CC fournit les documents demandés (rapport, logs)",
+    alors: "Analyser. Vérifier la cohérence avec nos preuves existantes. Maintenir la demande de réparation — les documents ne compensent pas le préjudice."
   },
   {
     emoji: "⚔️",
-    si: "CC engage une procédure d'arbitrage en premier",
-    alors: "Contre-créance de +1,2M€. Exception d'inexécution (Art. 82 CO). Dossier complet avec tous nos leviers."
+    si: "CC lance l'arbitrage en premier",
+    alors: "Contre-créance +1,2M€. Art. 82 CO + Art. 97 CO + Art. 100 CO + Art. 2 CC. Probabilité victoire totale CC = 1,7%. Ils se tirent une balle dans le pied."
   },
   {
     emoji: "🤝",
     si: "CC accepte nos conditions minimales",
-    alors: "Accord écrit. Vérifier exécution. Quitus mutuel APRÈS réception des fonds et actifs."
+    alors: "Accord écrit immédiat. Vérifier exécution point par point. Quitus mutuel UNIQUEMENT après réception de tous les fonds et actifs."
   }
 ];
 
 export const journalBord = [
   {
+    date: "2 fév 2026",
+    heure: "—",
+    evenement: "PLAINTE PÉNALE DÉPOSÉE — Art. 323-1 (accès frauduleux), Art. 323-3 (modification données), Art. 314-1 CP (abus de confiance). 14 pièces jointes. Tribunal Judiciaire de Marseille.",
+    decision: "Premier acte concret. Ne plus jamais écrire à CC directement."
+  },
+  {
+    date: "2 fév 2026",
+    heure: "—",
+    evenement: "SIGNALEMENT DDPP ENVOYÉ — Art. L442-1 Code de commerce. BCO pour 1$, pénalités 630K€, clause confidentialité muselante, arbitrage ICC prohibitif. Signale que d'autres créateurs pourraient être touchés.",
+    decision: "Front administratif ouvert. Préparer signalement FINMA."
+  },
+  {
+    date: "2 fév 2026",
+    heure: "—",
+    evenement: "DÉCOUVERTE FINMA — Copyright Capital NON ENREGISTRÉ dans les registres FINMA. CC fournit 'upfront capital funding to content creators' (Crunchbase) mais opère sans licence. Violation potentielle LEFin.",
+    decision: "Arme nucléaire. Signaler dès cette semaine."
+  },
+  {
+    date: "31 jan 2026",
+    heure: "—",
+    evenement: "ANALYSE LETTRE CC 26 JANVIER — BCO exercé pour 1$, 630K€ pénalités, insinuation piratage ADN, exigence renonciation droits moraux (impossible Art. L121-1 CPI). Erreurs juridiques grossières identifiées.",
+    decision: "Cette lettre est une opportunité. Intégrée dans la plainte pénale comme pièce à conviction du schéma d'appropriation."
+  },
+  {
+    date: "30 jan 2026",
+    heure: "—",
+    evenement: "DEUXIÈME LETTRE ENVOYÉE (FR + EN) — Renforcement juridique complet. Art. 82, 97, 100 CO + Art. 2 CC. Table du préjudice. Annonce plainte pénale et communication publique via Origines Media.",
+    decision: "Phase d'exécution. Plainte pénale lundi 2 février. Avocat suisse cette semaine. Article APRÈS ces deux actions."
+  },
+  {
+    date: "30 jan 2026",
+    heure: "—",
+    evenement: "CLAUSE 10 CONFIDENTIALITÉ VÉRIFIÉE — Le contrat interdit de citer les clauses verbatim publiquement. Mais les faits (piratage, porno, Gmail, inaction) peuvent être publiés. Les mécanismes contractuels peuvent être décrits en termes généraux.",
+    decision: "Article Origines Media faisable en respectant Clause 10. Ne pas citer le contrat verbatim."
+  },
+  {
+    date: "30 jan 2026",
+    heure: "—",
+    evenement: "ANALYSE PROBABILISTE COMPLÈTE — P(CC lâche avant arbitrage) = 18% (lettre seule) à 47% (tous vecteurs). Espérance arbitrage CC = -360K€. Victoire totale CC = 1,7%. Facteur dominant : irrationalité de CC (sunk cost, ego, peur du précédent).",
+    decision: "Le dossier est fort. L'exécution est lente. Passer aux actes maintenant."
+  },
+  {
+    date: "30 jan 2026",
+    heure: "—",
+    evenement: "AUTO-CRITIQUE STRATÉGIQUE — Le timing est trop lent. Pas d'avocat suisse. Plainte annoncée mais pas déposée. Ratio paroles/actes déséquilibré. CC interprète le retard comme de l'hésitation.",
+    decision: "Correction immédiate : plainte lundi, avocat suisse cette semaine, plus de lettres à CC."
+  },
+  {
+    date: "~31 jan 2026",
+    heure: "—",
+    evenement: "PREMIER DÉLAI EXPIRÉ — CC n'a fourni aucun document, n'a transféré aucun actif. Silence total depuis le 12 janvier. CC EN DÉFAUT.",
+    decision: "Constater le défaut. Ne pas envoyer de troisième lettre. Agir."
+  },
+  {
     date: "16 jan 2026",
     heure: "10h00",
     evenement: "LETTRE OFFENSIVE ENVOYÉE — Mise en demeure complète avec contre-créance +1,2M€, délais 15j/30j, conséquences annoncées.",
-    decision: "Phase d'observation. Ne rien faire jusqu'au 31 janvier sauf si CC propose une négociation sérieuse."
+    decision: "Phase d'observation jusqu'au 31 janvier."
   },
   {
     date: "15 jan 2026",
@@ -271,7 +432,7 @@ export const journalBord = [
     date: "12 jan 2026",
     heure: "16h40",
     evenement: "Email Martin Febvre (CC) — Demande paiement 6 000€ + relevés. CC IGNORE notre lettre du 19/12 et l'Art. 82 CO.",
-    decision: "Ne pas répondre. Preuve supplémentaire de leur mauvaise foi. Inclure dans la lettre offensive."
+    decision: "Ne pas répondre. Preuve supplémentaire de leur mauvaise foi."
   },
   {
     date: "13 jan 2026",

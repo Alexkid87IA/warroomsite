@@ -22,7 +22,7 @@ export const mainTimelineData: ChronologyEvent[] = [
   { date: "17 oct 2024 - 13:32", event: "🔴 LETTRE PRÉDATRICE de Jack: 'we can live with it'", phase: "setup", critical: true },
   { date: "21 oct 2024", event: "Jonathan remet les accès après meeting", phase: "setup" },
   { date: "30 oct 2024 - 12:28", event: "Emre demande si 'satisfied with current status' — CYNISME", phase: "setup", important: true },
-  { date: "Fin juillet 2025", event: "🔴 PIRATAGE page Oye", phase: "incident", critical: true },
+  { date: "Fin juillet 2025", event: "🔴 PIRATAGE page Oye DÉCOUVERT (27 juillet 2025)", phase: "incident", critical: true },
   { date: "8 août 2025", event: "🤖 Joel Cooper reçoit 'No evidence of compromise' de ROBOT Meta (advertise-noreply@)", phase: "incident", important: true },
   { date: "8 août 2025", event: "📧 Joel → Jonathan → Alex: forward de l'email robot", phase: "incident" },
   { date: "25 août 2025", event: "📧 Joel Cooper confirme ID Business Manager CC: 1149345562525337", phase: "incident" },
@@ -42,5 +42,13 @@ export const mainTimelineData: ChronologyEvent[] = [
   { date: "~20-23 déc 2025", event: "Jonathan propose RDV technique", phase: "escalation" },
   { date: "23 déc 2025", event: "❌ Jonathan ANNULE le RDV technique après réception lettre", phase: "escalation", critical: true },
   { date: "26 déc 2025", event: "📄 LETTRE CC — Réponse agressive (Emre Kumet)", phase: "escalation", critical: true },
-  { date: "29 déc 2025", event: "⏰ Délai transfert actifs EXPIRÉ — Non respecté par CC", phase: "current", critical: true }
+  { date: "29 déc 2025", event: "⏰ Délai transfert actifs EXPIRÉ — Non respecté par CC", phase: "current", critical: true },
+  { date: "12 jan 2026", event: "📧 Martin Febvre (CC) — Demande paiement 6 000€ ignorant Art. 82 CO", phase: "current" },
+  { date: "16 jan 2026", event: "📄 LETTRE OFFENSIVE ADN — Contre-créance +1,2M€, délais 15j/30j", phase: "current", critical: true },
+  { date: "26 jan 2026", event: "💣 LETTRE NUCLÉAIRE CC — BCO exercé pour 1$, pénalités 630K€, insinue qu'ADN responsable du piratage", phase: "current", critical: true },
+  { date: "30 jan 2026", event: "📄 LETTRE ADN (FR+EN) — LRAR RK 46 507 575 0 FR, renforcement Art. 82/97/100 CO + Art. 2 CC", phase: "current", critical: true },
+  { date: "~31 jan 2026", event: "⏰ Délai 15 jours EXPIRÉ — CC en défaut total", phase: "current", critical: true },
+  { date: "2 fév 2026", event: "⚖️ PLAINTE PÉNALE DÉPOSÉE — Art. 323-1, 323-3, 314-1 CP (Tribunal Marseille)", phase: "current", critical: true },
+  { date: "2 fév 2026", event: "📋 SIGNALEMENT DDPP — Art. L442-1 C.com (pratiques abusives B2B)", phase: "current", important: true },
+  { date: "2 fév 2026", event: "🔍 FINMA — CC non enregistré, opère potentiellement sans autorisation (LEFin)", phase: "current", important: true }
 ];

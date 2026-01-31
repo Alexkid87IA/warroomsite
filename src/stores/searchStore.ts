@@ -83,6 +83,10 @@ const buildSearchIndex = (): SearchResult[] => {
     { date: '16 jan 2026', event: 'Lettre offensive envoyée - Contre-créance +1,2M€', path: '/encours' },
     { date: '~31 jan 2026', event: 'DEADLINE - Documents + Transfert Buzzly/VoyagerLoin', path: '/encours' },
     { date: '~15 fév 2026', event: 'DEADLINE - Position sur réparation préjudice', path: '/encours' },
+    { date: '26 jan 2026', event: 'LETTRE NUCLÉAIRE CC — BCO exercé pour 1$, pénalités 630K€', path: '/letters' },
+    { date: '30 jan 2026', event: 'Lettre ADN (FR+EN) — LRAR RK 46 507 575 0 FR', path: '/letters' },
+    { date: '2 fév 2026', event: 'Plainte pénale déposée — Art. 323-1 + 314-1 CP', path: '/encours' },
+    { date: '2 fév 2026', event: 'Signalement DDPP/DGCCRF — Art. L442-1 Code commerce', path: '/encours' },
   ];
 
   keyEvents.forEach((evt, i) => {
@@ -105,6 +109,8 @@ const buildSearchIndex = (): SearchResult[] => {
     { amount: '210 000 €', desc: 'À rembourser (contrat)', path: '/contracts' },
     { amount: '500 000 €', desc: 'Coût création page Oye (31 mois)', path: '/oye-clarification' },
     { amount: '6 000 €', desc: 'Minimum garanti mensuel', path: '/contracts' },
+    { amount: '630 000 €', desc: 'Pénalités réclamées par CC (Clause 6 × 3)', path: '/contracts' },
+    { amount: '1 $', desc: 'Prix BCO pour toute la PI (Clause 7) — exercé 26/01/2026', path: '/contracts' },
   ];
 
   keyAmounts.forEach((amt, i) => {
@@ -126,6 +132,10 @@ const buildSearchIndex = (): SearchResult[] => {
     { name: 'Lettre 19 décembre 2025', desc: 'Mise en demeure initiale ADN', path: '/letters' },
     { name: 'Lettre 16 janvier 2026', desc: 'Lettre offensive - Contre-créance', path: '/letters' },
     { name: 'Email Cheick Camara', desc: '27 août 2025 - Recommandation 2FA', path: '/2fa' },
+    { name: 'Lettre CC 26 janvier 2026', desc: 'Lettre nucléaire — BCO + 630K€ + insinuation piratage ADN', path: '/letters' },
+    { name: 'Lettre ADN 30 janvier 2026', desc: 'Renforcement juridique FR+EN — LRAR', path: '/letters' },
+    { name: 'Plainte pénale 2 février 2026', desc: 'Art. 323-1 + 323-3 + 314-1 CP', path: '/legal' },
+    { name: 'Signalement DDPP', desc: 'Art. L442-1 Code commerce — pratiques abusives B2B', path: '/legal' },
   ];
 
   keyDocs.forEach((doc, i) => {
@@ -151,6 +161,9 @@ const buildSearchIndex = (): SearchResult[] => {
     { name: 'Clause 4.3(e)(ii)', desc: 'Exception aux pénalités', path: '/contracts' },
     { name: 'Article 323-1 CP', desc: 'Accès frauduleux système (plainte pénale)', path: '/legal' },
     { name: 'Article 314-1 CP', desc: 'Abus de confiance (plainte pénale)', path: '/legal' },
+    { name: 'Article L442-1 C.com', desc: 'Déséquilibre significatif B2B (signalement DGCCRF)', path: '/legal' },
+    { name: 'Article 323-3 CP', desc: 'Modification frauduleuse de données dans un STAD', path: '/legal' },
+    { name: 'LEFin (Suisse)', desc: 'Loi sur les établissements financiers — CC non enregistré FINMA', path: '/legal' },
   ];
 
   legalConcepts.forEach((concept, i) => {

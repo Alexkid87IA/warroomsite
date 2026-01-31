@@ -1,4 +1,4 @@
-import { Target, Brain, FileText, TreeDeciduous, BookOpen, AlertTriangle, CheckCircle2, Clock, Zap } from 'lucide-react';
+import { Target, Brain, FileText, TreeDeciduous, BookOpen, AlertTriangle, CheckCircle2, Clock, Zap, TrendingDown, ShieldAlert } from 'lucide-react';
 import { Card, Badge } from '../../components';
 import {
   prochainActionData,
@@ -6,7 +6,9 @@ import {
   strategieData,
   phases,
   arbreDecision,
-  journalBord
+  journalBord,
+  analyseProba,
+  autoEvaluation
 } from './data';
 
 function ProchainActionHeader() {
@@ -173,11 +175,13 @@ function StrategieSection() {
 }
 
 function PhaseCard({ phase }: { phase: typeof phases[0] }) {
-  const statusColors = {
+  const statusColors: Record<string, string> = {
     'EN COURS': 'bg-cyan-500/30 text-cyan-200 border-cyan-400/50',
     'PLANIFIÉ': 'bg-purple-500/20 text-purple-300 border-purple-500/50',
     'EN RÉSERVE': 'bg-slate-600/20 text-slate-400 border-slate-500/30',
-    'OBJECTIF': 'bg-emerald-500/20 text-emerald-300 border-emerald-500/50'
+    'OBJECTIF': 'bg-emerald-500/20 text-emerald-300 border-emerald-500/50',
+    'TERMINÉ': 'bg-green-500/20 text-green-300 border-green-500/50',
+    'FAIT': 'bg-green-500/20 text-green-300 border-green-500/50'
   };
 
   const headerColors = {
@@ -200,7 +204,7 @@ function PhaseCard({ phase }: { phase: typeof phases[0] }) {
               <div className="text-sm text-slate-300">{phase.periode}</div>
             </div>
           </div>
-          <Badge type={phase.statut === 'EN COURS' ? 'active' : 'default'} className={statusColors[phase.statut]}>
+          <Badge type={phase.statut === 'EN COURS' ? 'active' : phase.statut === 'TERMINÉ' || phase.statut === 'FAIT' ? 'done' : 'default'} className={statusColors[phase.statut] || ''}>
             {phase.statut}
           </Badge>
         </div>
@@ -293,6 +297,13 @@ function PhaseCard({ phase }: { phase: typeof phases[0] }) {
             </div>
           </div>
         )}
+
+        {'resultat' in phase && phase.resultat && (
+          <div className="bg-green-900/20 border border-green-500/30 rounded-lg p-3">
+            <div className="text-green-400 text-xs uppercase tracking-wider mb-2">Résultat</div>
+            <p className="text-sm text-green-200 font-semibold">{phase.resultat}</p>
+          </div>
+        )}
       </div>
     </div>
   );
@@ -368,6 +379,139 @@ function JournalBordSection() {
   );
 }
 
+function AnalyseProbaSection() {
+  const barWidth = (pct: number) => `${Math.min(pct, 100)}%`;
+
+  return (
+    <Card title="📊 5. ANALYSE PROBABILISTE — P(CC lâche avant arbitrage)" accent="cyan">
+      <div className="space-y-6">
+        <div className="grid md:grid-cols-2 gap-4">
+          <div className="bg-slate-800/30 border border-slate-700/30 rounded-lg p-4">
+            <div className="text-slate-400 text-xs uppercase tracking-wider mb-4">Probabilité selon les vecteurs activés</div>
+            <div className="space-y-3">
+              {[
+                { label: "Lettre seule", value: analyseProba.pCC_lache.lettre_seule },
+                { label: "Lettre + plainte pénale", value: analyseProba.pCC_lache.lettre_plainte },
+                { label: "Lettre + plainte + avocat suisse", value: analyseProba.pCC_lache.lettre_plainte_avocat },
+                { label: "Tous vecteurs activés", value: analyseProba.pCC_lache.tous_vecteurs }
+              ].map((item, index) => (
+                <div key={index}>
+                  <div className="flex justify-between text-sm mb-1">
+                    <span className="text-slate-300">{item.label}</span>
+                    <span className="text-cyan-300 font-bold">{item.value}%</span>
+                  </div>
+                  <div className="h-2 bg-slate-700 rounded-full overflow-hidden">
+                    <div
+                      className="h-full bg-gradient-to-r from-cyan-500 to-blue-500 rounded-full transition-all"
+                      style={{ width: barWidth(item.value) }}
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="space-y-4">
+            <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4">
+              <div className="text-red-400 text-xs uppercase tracking-wider mb-2">Espérance arbitrage pour CC</div>
+              <div className="text-3xl font-bold text-red-300">{analyseProba.esperanceArbitrageCC.toLocaleString('fr-FR')} €</div>
+              <div className="text-sm text-slate-400 mt-1">L'arbitrage est mathématiquement perdant pour CC</div>
+            </div>
+            <div className="bg-emerald-900/20 border border-emerald-500/30 rounded-lg p-4">
+              <div className="text-emerald-400 text-xs uppercase tracking-wider mb-2">Probabilité victoire TOTALE de CC</div>
+              <div className="text-3xl font-bold text-emerald-300">{analyseProba.probabiliteVictoireTotaleCC}%</div>
+              <div className="text-sm text-slate-400 mt-1">CC gagne sur toute la ligne dans moins de 2% des cas</div>
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-amber-900/20 border border-amber-500/30 rounded-lg p-4">
+          <div className="text-amber-400 text-xs uppercase tracking-wider mb-3">Facteurs dominants</div>
+          <div className="space-y-2">
+            {analyseProba.facteursDominants.map((facteur, index) => (
+              <div key={index} className="flex items-start gap-2 text-slate-200">
+                <span className="text-amber-400">•</span>
+                <span>{facteur}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="bg-cyan-900/20 border border-cyan-500/30 rounded-lg p-4 text-center">
+          <p className="text-lg font-semibold text-cyan-200">{analyseProba.diagnostic}</p>
+        </div>
+      </div>
+    </Card>
+  );
+}
+
+function AutoEvaluationSection() {
+  return (
+    <Card title="🪞 6. AUTO-ÉVALUATION — La partie d'échecs" accent="amber">
+      <div className="space-y-6">
+        <div className="grid md:grid-cols-2 gap-4">
+          <div className="bg-emerald-900/20 border border-emerald-500/30 rounded-lg p-4">
+            <div className="text-emerald-400 text-xs uppercase tracking-wider mb-3 flex items-center gap-2">
+              <CheckCircle2 className="w-4 h-4" />
+              Bien joué
+            </div>
+            <div className="space-y-2">
+              {autoEvaluation.bienJoue.map((point, index) => (
+                <div key={index} className="flex items-start gap-2 text-sm text-slate-200">
+                  <span className="text-emerald-400">✓</span>
+                  <span>{point}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          <div className="bg-red-900/20 border border-red-500/30 rounded-lg p-4">
+            <div className="text-red-400 text-xs uppercase tracking-wider mb-3 flex items-center gap-2">
+              <ShieldAlert className="w-4 h-4" />
+              Mal joué / pas encore joué
+            </div>
+            <div className="space-y-2">
+              {autoEvaluation.malJoue.map((point, index) => (
+                <div key={index} className="flex items-start gap-2 text-sm text-slate-200">
+                  <span className="text-red-400">✗</span>
+                  <span>{point}</span>
+                </div>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        <div className="bg-gradient-to-r from-red-900/30 via-amber-900/20 to-red-900/30 border-2 border-red-500/50 rounded-xl p-5">
+          <div className="text-red-400 text-xs uppercase tracking-wider mb-4 flex items-center gap-2">
+            <Zap className="w-4 h-4" />
+            Actions urgentes
+          </div>
+          <div className="space-y-3">
+            {autoEvaluation.actionsUrgentes.map((item, index) => {
+              const prioriteColors: Record<string, string> = {
+                'CRITIQUE': 'bg-red-500/30 text-red-200 border-red-500/50',
+                'IMPORTANT': 'bg-amber-500/30 text-amber-200 border-amber-500/50',
+                'MOYEN': 'bg-blue-500/30 text-blue-200 border-blue-500/50'
+              };
+              return (
+                <div key={index} className="flex items-center justify-between bg-black/20 rounded-lg p-3">
+                  <div>
+                    <div className="text-white font-semibold">{item.action}</div>
+                    <div className="text-slate-400 text-sm">{item.delai}</div>
+                  </div>
+                  <span className={`px-3 py-1 rounded-full text-xs font-bold border ${prioriteColors[item.priorite] || ''}`}>
+                    {item.priorite}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+      </div>
+    </Card>
+  );
+}
+
 export default function EnCoursPage() {
   return (
     <div className="space-y-8">
@@ -376,10 +520,12 @@ export default function EnCoursPage() {
       <StrategieSection />
       <PlanActionSection />
       <ArbreDecisionSection />
+      <AnalyseProbaSection />
+      <AutoEvaluationSection />
       <JournalBordSection />
 
       <div className="text-center text-slate-500 text-sm pt-8">
-        Dernière mise à jour : 29 décembre 2025 — 21h00
+        Dernière mise à jour : 30 janvier 2026
       </div>
     </div>
   );

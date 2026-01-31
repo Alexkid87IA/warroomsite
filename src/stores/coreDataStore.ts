@@ -10,6 +10,7 @@ interface FinancialData {
   toRepay: number;
   ccDemand: number;
   monthsInaction: number;
+  ccPenalties: number;
 }
 
 interface CoreDataState {
@@ -33,9 +34,10 @@ export const useCoreDataStore = create<CoreDataState>()(
         advanceReceived: 150000,
         toRepay: 210000,
         ccDemand: 11351.89,
-        monthsInaction: 6,
+        monthsInaction: 7,
+        ccPenalties: 630000,
       },
-      lastUpdate: '16 janvier 2026',
+      lastUpdate: '2 février 2026',
       currentPhase: 'offensive',
 
       updateFinancial: (data) => set((state) => ({

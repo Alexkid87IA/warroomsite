@@ -20,11 +20,11 @@ CARACTÉRISTIQUES:
 • Audience: Hispanophone internationale (dont USA)
 • Revenus AdBreak: 4 000 à 15 000 €/mois (variable selon les mois)
 • Part des revenus ADN: ~40% du chiffre d'affaires total
-• Contenu créé: ~200 vidéos sur 4 ans de travail
+• Contenu créé: ~200 vidéos sur environ 2,5 ans (depuis décembre 2022)
 • FIABILITÉ: ✅ PROUVÉ (abonnés, audience) / 🔶 CONFIRMÉ (revenus)
 
 STATUT ACTUEL:
-• PIRATÉE depuis fin juillet / début août 2025
+• PIRATÉE depuis le 27 juillet 2025
 • Contrôlée par des pirates
 • Publie du contenu sexuel/inapproprié
 • Page ID retrouvé: 100089751341306
@@ -50,7 +50,7 @@ LA VRAIE VALEUR DE OYE (au-delà de l'AdBreak):
 Même si la page Oye était récupérée AUJOURD'HUI, elle vaudrait 0 €.
 
 POURQUOI:
-1. 5+ mois de contenu inapproprié (sexuel) ont détruit l'audience
+1. 6+ mois de contenu inapproprié (sexuel) ont détruit l'audience
 2. L'engagement (likes, commentaires, partages) s'est effondré
 3. L'algorithme Facebook a déclassé la page
 4. La monétisation a été désactivée par Meta
@@ -200,8 +200,8 @@ QUESTIONS À POSER À CC:
   {
     id: "piratage-inaction",
     category: "piratage",
-    title: "Inaction de 4+ mois",
-    content: `INACTION DE COPYRIGHT CAPITAL — 4+ MOIS
+    title: "Inaction de 6+ mois",
+    content: `INACTION DE COPYRIGHT CAPITAL — 6+ MOIS
 
 CHRONOLOGIE DE L'INACTION:
 
@@ -210,7 +210,7 @@ CHRONOLOGIE DE L'INACTION:
 • Fin des tentatives de récupération
 • FIABILITÉ: ✅ PROUVÉ
 
-SEPTEMBRE - DÉCEMBRE 2025 (4+ mois):
+SEPTEMBRE 2025 - FÉVRIER 2026 (6+ mois):
 • AUCUNE démarche documentée de CC pour récupérer la page
 • Aucun contact avec Meta de leur côté
 • Aucune enquête interne
@@ -235,7 +235,7 @@ CE QUE CC A FAIT:
 QUESTION PIÈGE:
 "Pourquoi Oye est-elle la SEULE page piratée de tout le portefeuille Copyright Capital ?"
 → Si leur sécurité est si bonne, pourquoi CETTE page en particulier ?`,
-    keywords: ["inaction", "4 mois", "septembre", "décembre", "rien", "aucune", "enquête", "démarche"]
+    keywords: ["inaction", "6 mois", "septembre", "février", "rien", "aucune", "enquête", "démarche"]
   },
   {
     id: "piratage-seule-page",

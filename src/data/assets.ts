@@ -8,7 +8,7 @@ export const assets = {
     revenuePercent: 40,
     status: "PERDUE / PIRATÉE",
     currentState: "Contrôlée par pirates, contenu sexuel/inapproprié",
-    contentLost: "~200 vidéos, 4 ans de travail",
+    contentLost: "~200 vidéos, 2,5 ans de travail (depuis décembre 2022)",
     ids: {
       fromADN: { id: "110170275225790", source: "Alexis (ADN) 28/08 — Remittance Details", status: "unknown" },
       fromMeta: { id: "100087176420390", source: "Meta 29/08 — rapport interne", status: "Permanently deleted" },

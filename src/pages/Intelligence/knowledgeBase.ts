@@ -18,6 +18,7 @@ import heinrichVogelChunks from './knowledge/16-heinrich-vogel';
 import transfert28SeptChunks from './knowledge/17-transfert-28-sept';
 import lettre16Janvier2026Chunks from './knowledge/18-lettre-16-janvier-2026';
 import syntheseExpertsChunks from './knowledge/19-synthese-experts';
+import fevrier2026Chunks from './knowledge/20-fevrier-2026';
 
 export type { KnowledgeChunk };
 
@@ -42,6 +43,7 @@ export const allChunks: KnowledgeChunk[] = [
   ...transfert28SeptChunks,
   ...lettre16Janvier2026Chunks,
   ...syntheseExpertsChunks,
+  ...fevrier2026Chunks,
 ];
 
 // Fonction pour echapper les caracteres speciaux des regex
